@@ -32,12 +32,10 @@ Die letzten 👍/👎-Beispiele und alle Stil-Hinweise gehen bei jeder Auswahl a
    wiederverwenden, zwei Programme können nicht dieselben Updates abholen). Dem Bot einmal
    schreiben; deine Chat-ID ist dieselbe wie beim Job-Bot.
 3. **LinkedIn-App** unter <https://www.linkedin.com/developers/apps> anlegen, Produkte
-   „Share on LinkedIn“ und „Sign In with LinkedIn using OpenID Connect“ hinzufügen,
-   Redirect-URL `http://localhost:8765/callback` eintragen. Dann lokal:
-   ```bash
-   pip install requests && python scripts/linkedin_auth.py CLIENT_ID CLIENT_SECRET
-   ```
-   Der Token läuft nach ca. 60 Tagen ab; der Bot meldet das per Telegram, dann erneut ausführen.
+   „Share on LinkedIn“ und „Sign In with LinkedIn using OpenID Connect“ hinzufügen. Dann im
+   Developer-Portal unter „Docs and tools → OAuth Token Generator“ einen Token mit den Scopes
+   `openid`, `profile`, `w_member_social` erzeugen (Alternative: `scripts/linkedin_auth.py`).
+   Der Token läuft nach ca. 60 Tagen ab; der Bot meldet das per Telegram, dann neu erzeugen.
 4. **X-Zugang**: Bearer-Token der offiziellen X API *oder* Key von twitterapi.io;
    in `config.yaml` mit `x_source` umschalten.
 5. **Secrets** im Repo (Settings → Secrets and variables → Actions):
@@ -46,7 +44,7 @@ Die letzten 👍/👎-Beispiele und alle Stil-Hinweise gehen bei jeder Auswahl a
    |---|---|
    | `ANTHROPIC_API_KEY` | Auswahl, Texte, Trends |
    | `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` | Freigabe |
-   | `LINKEDIN_ACCESS_TOKEN`, `LINKEDIN_PERSON_URN` | Posten |
+   | `LINKEDIN_ACCESS_TOKEN` | Posten (`LINKEDIN_PERSON_URN` optional, wird sonst automatisch ermittelt) |
    | `X_BEARER_TOKEN` *oder* `TWITTERAPI_IO_KEY` | Suche |
 
 6. Unter **Actions** einmal „Trends“ und dann „Scout“ per „Run workflow“ starten.

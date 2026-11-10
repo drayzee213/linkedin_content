@@ -32,6 +32,21 @@ def _check(r: requests.Response) -> requests.Response:
     return r
 
 
+_owner_cache = None
+
+
+def owner_urn(version: str = "") -> str:
+    """Eigene Personen-URN: aus dem Secret oder automatisch über den Token ermittelt."""
+    global _owner_cache
+    if os.environ.get("LINKEDIN_PERSON_URN", "").strip():
+        return os.environ["LINKEDIN_PERSON_URN"].strip()
+    if not _owner_cache:
+        r = _check(requests.get("https://api.linkedin.com/v2/userinfo", timeout=TIMEOUT, headers={
+            "Authorization": f"Bearer {os.environ['LINKEDIN_ACCESS_TOKEN']}"}))
+        _owner_cache = f"urn:li:person:{r.json()['sub']}"
+    return _owner_cache
+
+
 def escape_commentary(text: str) -> str:
     """LinkedIns 'little text format': reservierte Zeichen müssen escaped werden.
     '#' bleibt unangetastet, damit Hashtags funktionieren."""
@@ -52,7 +67,7 @@ def download_video(url: str, dest: str, max_mb: int) -> int:
 
 
 def upload_video(path: str, version: str) -> str:
-    owner = os.environ["LINKEDIN_PERSON_URN"]
+    owner = owner_urn()
     size = os.path.getsize(path)
     init = _check(requests.post(
         f"{API}/videos?action=initializeUpload", headers=_headers(version), timeout=TIMEOUT,
@@ -88,7 +103,7 @@ def upload_video(path: str, version: str) -> str:
 
 def create_post(text: str, video_urn: str, title: str, version: str) -> str:
     r = _check(requests.post(f"{API}/posts", headers=_headers(version), timeout=TIMEOUT, json={
-        "author": os.environ["LINKEDIN_PERSON_URN"],
+        "author": owner_urn(),
         "commentary": escape_commentary(text)[:3000],
         "visibility": "PUBLIC",
         "distribution": {"feedDistribution": "MAIN_FEED", "targetEntities": [],
