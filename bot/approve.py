@@ -1,13 +1,17 @@
 """Lauf alle paar Minuten: Telegram-Antworten abholen (Go, Verwerfen, Feedback, Korrekturen)."""
 import html
 import os
+import re
 import tempfile
 import time
 
-from . import linkedin, llm, telegram
+from . import linkedin, llm, telegram, x_sources
 from .common import add_feedback, load_config, load_state, save_state
 
+TWEET_URL = re.compile(r"(?:x|twitter)\.com/\w+/status(?:es)?/(\d+)")
+
 HELP = ("<b>Befehle</b>\n"
+        "Link zu einem X-Post schicken – ich baue daraus einen Vorschlag und merke mir die Art\n"
         "/status – offene Vorschläge und Lernstand\n"
         "/stil &lt;Hinweis&gt; – dauerhafter Stil-Hinweis, z. B. <code>/stil keine Emojis</code>\n"
         "/stil – Hinweise anzeigen · /stil_reset – alle löschen\n"
@@ -65,8 +69,32 @@ def on_callback(cfg: dict, state: dict, cb: dict) -> None:
     elif action in ("like", "dislike"):
         add_feedback(state, cand, action)
         telegram.answer_callback(cb["id"], "Gemerkt 👍" if action == "like" else "Gemerkt 👎")
-        telegram.send("Gemerkt: " + ("mehr davon 👍" if action == "like" else "weniger davon 👎"),
-                      reply_to=cand["msg_id"])
+        ask = telegram.send("Gemerkt: " + ("mehr davon 👍" if action == "like" else "weniger davon 👎")
+                            + "\nWenn du magst: Antworte auf diese Nachricht mit dem Grund.",
+                            reply_to=cand["msg_id"])
+        state["feedback"][-1]["ask_msg"] = ask
+
+
+def on_link(cfg: dict, state: dict, tweet_id: str, comment: str) -> None:
+    """Selbst eingereichter X-Link: Vorschlag bauen und als positives Beispiel merken."""
+    if tweet_id in state["pending"]:
+        telegram.send("Dazu liegt schon ein offener Vorschlag vor.")
+        return
+    cand = x_sources.fetch_tweet(cfg, tweet_id)
+    if not cand:
+        telegram.send("In dem Post finde ich kein Video (oder er ist nicht abrufbar). "
+                      "Ich kann nur Video-Posts verarbeiten.")
+        return
+    add_feedback(state, cand, "like", ("selbst eingereicht" + (": " + comment if comment else "")))
+    draft = llm.draft_for(cfg, state, cand)
+    cand.update(reason="Von dir eingereicht", post_text=draft.post_text.strip(),
+                hashtags=draft.hashtags, sent=int(time.time()))
+    telegram.send_video(cand["video_url"],
+                        f"🎬 @{html.escape(cand['author'])} · {round(cand['duration'])} s")
+    cand["msg_id"] = telegram.send(telegram.draft_text(cand), telegram.draft_buttons(cand["id"]))
+    state["pending"][cand["id"]] = cand
+    if cand["id"] not in state["seen"]:
+        state["seen"].append(cand["id"])
 
 
 def on_message(cfg: dict, state: dict, msg: dict) -> None:
@@ -75,7 +103,14 @@ def on_message(cfg: dict, state: dict, msg: dict) -> None:
         return
     reply_id = (msg.get("reply_to_message") or {}).get("message_id")
     cand = next((c for c in state["pending"].values() if c["msg_id"] == reply_id), None)
-    if cand and not text.startswith("/"):
+    fb = next((f for f in state["feedback"] if reply_id and f.get("ask_msg") == reply_id), None)
+    link = TWEET_URL.search(text)
+    if fb and not text.startswith("/"):
+        fb["note"] = text[:300]
+        telegram.send("Danke, Grund gemerkt.")
+    elif link:
+        on_link(cfg, state, link.group(1), re.sub(r"https?://\S+", "", text).strip()[:300])
+    elif cand and not text.startswith("/"):
         draft = llm.revise(cfg, state, cand, text)
         cand.update(post_text=draft.post_text.strip(), hashtags=draft.hashtags)
         try:

@@ -186,3 +186,24 @@ def search(cfg: dict) -> list[dict]:
     if source == "thirdparty":
         return search_thirdparty(cfg)
     raise SystemExit(f"Unbekannte x_source: {source}")
+
+
+def fetch_tweet(cfg: dict, tweet_id: str) -> dict | None:
+    """Einzelnen Tweet per ID holen (für selbst eingereichte Links). None = kein Video."""
+    if cfg.get("x_source", "official") == "thirdparty":
+        r = requests.get("https://api.twitterapi.io/twitter/tweets",
+                         headers={"X-API-Key": os.environ["TWITTERAPI_IO_KEY"]},
+                         params={"tweet_ids": tweet_id}, timeout=TIMEOUT)
+        r.raise_for_status()
+        found = parse_thirdparty(r.json())
+    else:
+        r = requests.get("https://api.x.com/2/tweets",
+                         headers={"Authorization": f"Bearer {os.environ['X_BEARER_TOKEN']}"},
+                         params={"ids": tweet_id,
+                                 "tweet.fields": "created_at,public_metrics,attachments,note_tweet",
+                                 "expansions": "attachments.media_keys,author_id",
+                                 "media.fields": "type,duration_ms,variants",
+                                 "user.fields": "username,name"}, timeout=TIMEOUT)
+        r.raise_for_status()
+        found = parse_official(r.json())
+    return found[0] if found else None

@@ -20,6 +20,8 @@ Wegen des 30-Minuten-Takts geht ein Post **bis zu 30 Minuten nach deinem Go** ra
 - **✅ Go** – posten · **❌ Verwerfen** – weg damit (zählt als negatives Beispiel)
 - **👍 / 👎** – Geschmack trainieren, ohne zu posten oder zu verwerfen
 - **Auf einen Vorschlag antworten** (z. B. „kürzer, ohne Frage am Ende“) – Text wird überarbeitet
+- **Link zu einem X-Post schicken** – der Bot baut daraus einen Vorschlag und merkt sich die Art als positives Beispiel
+- Nach 👍/👎 fragt der Bot nach dem Grund; die Antwort verfeinert das Training
 - `/stil <Hinweis>` – dauerhafte Regel für alle künftigen Texte · `/stil` · `/stil_reset`
 - `/status` – offene Vorschläge und Lernstand
 

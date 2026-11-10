@@ -2,7 +2,7 @@ import time
 
 import pytest
 
-from bot import approve, common, linkedin, telegram, x_sources
+from bot import approve, common, linkedin, llm, telegram, x_sources
 
 CFG = common.load_config()
 
@@ -108,3 +108,26 @@ def test_main_ignores_strangers(monkeypatch):
         {"update_id": 5, "message": {"text": "/status", "chat": {"id": 666}}}])
     approve.main()
     assert log == [] and common.load_state()["tg_offset"] == 6
+
+
+def test_submitted_link_becomes_draft_and_like(monkeypatch):
+    log = []
+    patch_tg(monkeypatch, log)
+    monkeypatch.setattr(telegram, "send_video", lambda *a: None)
+    monkeypatch.setattr(x_sources, "fetch_tweet", lambda cfg, tid: cand(id=tid, msg_id=None))
+    monkeypatch.setattr(llm, "draft_for", lambda *a: llm.Draft(post_text="Neu", hashtags=["#A"]))
+    state = common.load_state()
+    approve.on_message(CFG, state, {"text": "https://x.com/bob/status/123?s=20 genau sowas", "chat": {"id": 42}})
+    assert state["pending"]["123"]["post_text"] == "Neu" and "123" in state["seen"]
+    assert state["feedback"][-1]["verdict"] == "like" and "genau sowas" in state["feedback"][-1]["note"]
+
+
+def test_feedback_reason(monkeypatch):
+    log = []
+    patch_tg(monkeypatch, log)
+    state = common.load_state()
+    state["pending"]["1"] = cand()
+    approve.on_callback(CFG, state, {"id": "c", "data": "dislike:1"})
+    approve.on_message(CFG, state, {"text": "zu werblich", "chat": {"id": 42},
+                                    "reply_to_message": {"message_id": 99}})
+    assert state["feedback"][-1]["note"] == "zu werblich"

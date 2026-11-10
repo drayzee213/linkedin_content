@@ -121,6 +121,12 @@ def select_and_draft(cfg: dict, state: dict, cands: list[dict]) -> list[Pick]:
     return [p for p in picks if p.tweet_id in valid][:n]
 
 
+def draft_for(cfg: dict, state: dict, cand: dict) -> Draft:
+    user = (f"Die Person hat diesen Video-Tweet selbst ausgesucht und möchte ihn posten. "
+            f"Schreibe den LinkedIn-Post dazu.\n\nTweet von @{cand['author']}:\n{cand['text']}")
+    return _parse(cfg, _system(cfg, state), user, Draft)
+
+
 def revise(cfg: dict, state: dict, cand: dict, instruction: str) -> Draft:
     user = (f"Original-Tweet von @{cand['author']}:\n{cand['text']}\n\n"
             f"Bisheriger Entwurf:\n{cand['post_text']}\n\nHashtags: {' '.join(cand['hashtags'])}\n\n"
