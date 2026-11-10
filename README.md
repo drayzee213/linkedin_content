@@ -9,10 +9,10 @@ einen deutschen LinkedIn-Text dazu und schickt dir beides per Telegram. Erst nac
 | Workflow | Wann | Was |
 |---|---|---|
 | `scout.yml` | 07:40, 11:40, 16:40 MEZ | X durchsuchen → filtern → Claude wählt aus und textet → Telegram |
-| `approve.yml` | alle 30 min (06–22 Uhr MEZ) | deine Telegram-Antworten verarbeiten, bei Go auf LinkedIn posten |
+| `approve.yml` | alle 10 min | deine Telegram-Antworten verarbeiten, bei Go auf LinkedIn posten |
 | `trends.yml` | montags | Web-Recherche zu LinkedIn-Trends → `state/trends.md`, fließt in jeden Text ein |
 
-Wegen des 30-Minuten-Takts geht ein Post **bis zu 30 Minuten nach deinem Go** raus
+Wegen des 10-Minuten-Takts geht ein Post **bis zu 10 Minuten nach deinem Go** raus
 (GitHub-Cron ist zudem oft einige Minuten verspätet).
 
 ## Bedienung in Telegram
@@ -62,8 +62,8 @@ Cron-Zeilen der Workflows.
   offizielle Firmen-Demos), oder beschränke die Suche über `accounts` auf solche Quellen.
 - **Der Text basiert nur auf dem Tweet-Text**, das Modell sieht das Video nicht. Sieh dir
   die Vorschau an, bevor du Go tippst.
-- **Actions-Minuten:** ca. 1.200 pro Monat (privates Repo: 2.000 frei, geteilt mit deinem
-  Job-Bot). Bei Bedarf den Takt in `approve.yml` strecken.
+- **Actions-Minuten:** Im öffentlichen Repo kostenlos. Wird das Repo privat, den Takt in
+  `approve.yml` auf 30 Minuten strecken (sonst reichen die 2.000 Freiminuten nicht).
 - **Kosten:** X API (offiziell: pro gelesenem Post, `max_results_per_query` klein halten)
   und Claude API (wenige Cent pro Lauf).
 

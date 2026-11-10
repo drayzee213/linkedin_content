@@ -1,8 +1,8 @@
 name: Approve (Telegram-Antworten verarbeiten)
 on:
   schedule:
-    # alle 30 Minuten zwischen 05 und 21 Uhr UTC
-    - cron: '7,37 5-21 * * *'
+    # alle 10 Minuten (kostenlos, solange das Repo öffentlich ist)
+    - cron: '3-59/10 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
