@@ -24,27 +24,41 @@ class Draft(BaseModel):
 
 
 RULES = """Du schreibst deutsche LinkedIn-Posts für eine Person, die Videos von X/Twitter \
-kuratiert und für ihr deutschsprachiges Netzwerk einordnet.
+kuratiert und ihrem deutschsprachigen Netzwerk kurz empfiehlt.
 
-Nische: {niche}
-Ton: {tone}
+Nische:
+{niche}
+Ton:
+{tone}
 
-Regeln für Reichweite auf LinkedIn:
-- Die erste Zeile ist der Hook (max. ca. 120 Zeichen): Sie muss allein stehen können, \
-weil LinkedIn danach "…mehr anzeigen" abschneidet. Kein Clickbait.
-- Kurze Absätze mit Leerzeilen, insgesamt 500 bis 1100 Zeichen.
-- Das Video läuft im Post mit: beschreibe, was man darin sieht, und ordne es ein.
-- Ende mit einer konkreten Frage, die Fachleute gern beantworten.
-- Keine Links im Text. 3 bis 5 Hashtags getrennt im Feld hashtags (mit #), \
-Mischung aus breit und spezifisch. Bevorzugte Basis: {hashtags}.
+Form (wirkt auf LinkedIn, ohne nach LinkedIn zu klingen):
+- Sehr kurz: 2 bis 5 Sätze, 150 bis 450 Zeichen. Das Video trägt den Post, nicht der Text.
+- Der erste Satz sagt konkret, was das ist und warum es sich lohnt (max. ca. 110 Zeichen), \
+weil LinkedIn danach "…mehr anzeigen" abschneidet. Benenne das Tool oder die Technik.
+- Danach eine eigene Einordnung: Was ist daran neu oder nützlich für Motion Designer?
+- Der Post endet mit einer Aussage. Keine Frage ans Publikum, kein Aufruf zum \
+Kommentieren, Liken, Folgen oder Teilen, kein "Was meint ihr?".
+- Keine Links im Text. 2 bis 3 Hashtags getrennt im Feld hashtags (mit #). \
+Bevorzugte Basis: {hashtags}.
 - Fachbegriffe, Produkt- und Firmennamen bleiben im Original.
 
-Regeln für Korrektheit:
+Verboten, weil es nach Massenware und Bot klingt:
+- Clickbait-Hooks ("Das ändert alles", "Niemand spricht darüber", "Game-Changer", \
+"Die Zukunft ist da", "Wow", "Stell dir vor").
+- Ein-Satz-pro-Zeile-Stakkato, Emoji-Aufzählungen, Listen, "3 Learnings", Pfeile.
+- Superlative und Hype, Doppelpunkt-Enthüllungen, rhetorische Fragen, Gedankenstriche \
+als Stilmittel, Abschlussfloskeln und Moral am Ende.
+
+Korrektheit:
 - Du kennst nur den Tweet-Text, nicht das Video. Behaupte nichts, was nicht im Tweet steht; \
 keine erfundenen Zahlen, Zitate oder Features.
-- Das Video stammt nicht von der postenden Person. Schreibe nie so, als hätte sie es \
-selbst erstellt. Die Quellenangabe wird automatisch angehängt, schreibe sie nicht selbst.
-- Sinngemäß übertragen und einordnen, nicht wörtlich übersetzen.
+- Ich-Form heißt eigene Einschätzung, nicht erfundene Erlebnisse: Schreibe nie, die Person \
+habe etwas getestet, benutzt oder gebaut.
+- Das Video stammt nicht von der postenden Person. Die Quellenangabe wird automatisch \
+angehängt, schreibe sie nicht selbst.
+- Sinngemäß einordnen, nicht wörtlich übersetzen.
+- Recherchierte Trends unten dienen nur der Themen- und Hashtag-Wahl. Ton und Form oben \
+haben immer Vorrang.
 {extras}"""
 
 
@@ -96,8 +110,9 @@ def select_and_draft(cfg: dict, state: dict, cands: list[dict]) -> list[Pick]:
          "reposts": c["reposts"], "views": c["views"], "video_seconds": round(c["duration"])}
         for c in cands], ensure_ascii=False, indent=1)
     user = (f"Hier sind {len(cands)} Video-Tweets. Wähle die {n} besten für die Nische und den "
-            f"Geschmack der Person aus (höchstens {n}; lieber weniger als etwas Unpassendes, "
-            f"Werbung, Engagement-Bait, Krypto-Shilling oder Politik) und schreibe zu jedem "
+            f"Geschmack der Person aus (höchstens {n}). Halte dich streng an die Nische und ihre "
+            f"Ausschlüsse: Wenn nichts wirklich passt, gib eine leere Liste zurück, statt "
+            f"etwas Halbpassendes, Werbung oder Engagement-Bait vorzuschlagen) und schreibe zu jedem "
             f"den LinkedIn-Post.\n\n{listing}")
     valid = {c["id"] for c in cands}
     picks = _parse(cfg, _system(cfg, state), user, Selection).picks
@@ -117,8 +132,8 @@ def research_trends(cfg: dict) -> str:
     messages = [{"role": "user", "content": (
         f"Recherchiere im Web den aktuellen Stand (letzte 4 Wochen) zu: (1) Was bevorzugt der "
         f"LinkedIn-Algorithmus derzeit bei Video-Posts (Länge, Format, Hook, Posting-Zeiten im "
-        f"DACH-Raum, Hashtags)? (2) Welche Themen und Hashtags sind in der Nische "
-        f"'{cfg['niche']}' auf LinkedIn im deutschsprachigen Raum gerade gefragt?\n\n"
+        f"DACH-Raum, Hashtags)? (2) Welche Themen und Hashtags sind in dieser Nische auf "
+        f"LinkedIn im deutschsprachigen Raum gerade gefragt?\n{cfg['niche']}\n\n"
         f"Antworte NUR mit einer kompakten deutschen Stichpunktliste (max. 12 Punkte), die ein "
         f"Texter direkt als Leitfaden nutzen kann. Nur Belegtes, keine Vermutungen.")}]
     for _ in range(6):

@@ -1,17 +1,28 @@
 # ---------- Was der Bot sucht ----------
-x_source: official          # "official" (X API v2) oder "thirdparty" (twitterapi.io)
+x_source: thirdparty        # "official" (X API v2) oder "thirdparty" (twitterapi.io)
 queries:                    # Suchbegriffe (X-Suchsyntax, englisch liefert die meisten Videos)
-  - '"AI agent" OR "AI agents" demo'
-  - 'LLM OR "language model" launch'
-  - 'robotics OR humanoid robot'
-  - '"open source" AI tool'
-  - 'automation workflow AI'
-accounts: []                # optional: nur/zusätzlich diese X-Accounts, z. B. [OpenAI, AnthropicAI]
+  - '"motion design" OR "motion graphics" OR "motion designer"'
+  - '"After Effects" (plugin OR script OR tool OR AI OR workflow)'
+  - 'Rive OR "Cavalry app" OR "Jitter video" OR "Spline 3D" OR Lottie'
+  - '("Cinema 4D" OR Blender OR Houdini) (addon OR plugin OR tool) (motion OR animation)'
+  - '"creative coding" OR WebGL OR threejs OR "three.js" OR GSAP'
+  - '"web animation" OR "scroll animation" OR "micro interaction" OR "micro interactions"'
+exclude_terms:              # Tweets mit diesen Begriffen werden gar nicht erst gesucht
+  - Midjourney
+  - Sora
+  - Kling
+  - Veo
+  - '"text to video"'
+  - '"text to image"'
+  - '"image to video"'
+  - '"AI video"'
+  - '"AI generated"'
+accounts: []                # optional: zusätzlich diese X-Accounts durchsuchen
 blocked_accounts: []        # von diesen Accounts nie etwas vorschlagen
 tweet_lang: en
 max_results_per_query: 25   # offizielle API rechnet pro gelesenem Post ab -> klein halten
 max_age_hours: 48
-min_likes: 200
+min_likes: 100
 video_min_seconds: 5
 video_max_seconds: 600
 video_max_mb: 200
@@ -22,9 +33,20 @@ llm_candidates: 15          # so viele Top-Kandidaten bekommt das Sprachmodell z
 pending_expire_hours: 48    # unbeantwortete Vorschläge verfallen danach
 
 # ---------- Wie der LinkedIn-Post klingt ----------
-niche: "KI & Automatisierung, Tech & Software"
-tone: "sachlich-einordnend: kurz erklären, was im Video zu sehen ist, dann fachlich einordnen (Was bedeutet das? Für wen relevant?). Du-Form, höchstens 1-2 Emojis."
-hashtags_base: ["#KI", "#Automatisierung", "#Tech"]
+niche: |
+  Motion Design. Gesucht: neue Tools, Plugins und Skripte für Motion Designer
+  (After Effects, Cinema 4D, Blender, Rive, Cavalry u. a.), besonders wenn KI darin
+  einen echten Arbeitsschritt verbessert (Rigging, Rotoscoping, Keyframes, Workflow),
+  außerdem handwerklich starke Animationen und coole Web-Gimmicks (WebGL, Scroll-
+  Animationen, Micro-Interactions, Creative Coding).
+  NIEMALS: reine generative KI, also Bild- oder Videogenerierung aus Prompts
+  (Midjourney, Sora, Runway, Kling, Veo und Ähnliches), KI-Filme, KI-Avatare,
+  "Prompt-Tricks". Auch nicht: allgemeine KI-News, Tutorials-Verkauf, Kursewerbung.
+tone: |
+  Persönlich, kurz und knapp, Ich-Form, wie eine schnelle Empfehlung an Kollegen:
+  "Das hier ist mir aufgefallen, deshalb ist es interessant." Trocken und konkret,
+  keine Begeisterungsfloskeln. Höchstens 1 Emoji, gern gar keins.
+hashtags_base: ["#MotionDesign", "#AfterEffects", "#Animation"]
 source_link_in_post: false  # true = Link zum Original-Tweet in den Post (kostet etwas Reichweite)
 model: claude-opus-5-5
 linkedin_version: "202610"  # LinkedIn-API-Version (JJJJMM), ca. 1 Jahr gültig

@@ -26,7 +26,8 @@ def _all_queries(cfg: dict) -> list[str]:
     accounts = cfg.get("accounts") or []
     for i in range(0, len(accounts), 10):
         queries.append("(" + " OR ".join(f"from:{a}" for a in accounts[i:i + 10]) + ")")
-    return queries
+    exclude = "".join(f" -{t}" for t in cfg.get("exclude_terms") or [])
+    return [f"({q}){exclude}" for q in queries]
 
 
 # ---------- Offizielle X API v2 ----------
@@ -71,7 +72,7 @@ def search_official(cfg: dict) -> list[dict]:
             "https://api.x.com/2/tweets/search/recent",
             headers={"Authorization": f"Bearer {token}"},
             params={
-                "query": f"({q}) has:videos -is:retweet -is:reply lang:{cfg['tweet_lang']}",
+                "query": f"{q} has:videos -is:retweet -is:reply lang:{cfg['tweet_lang']}",
                 "max_results": max(10, min(100, cfg["max_results_per_query"])),
                 "sort_order": "relevancy",
                 "tweet.fields": "created_at,public_metrics,attachments,note_tweet",
@@ -128,7 +129,7 @@ def search_thirdparty(cfg: dict) -> list[dict]:
     since = datetime.fromtimestamp(time.time() - cfg["max_age_hours"] * 3600, timezone.utc)
     out = []
     for q in _all_queries(cfg):
-        query = (f"({q}) filter:native_video -filter:retweets -filter:replies "
+        query = (f"{q} filter:native_video -filter:retweets -filter:replies "
                  f"lang:{cfg['tweet_lang']} min_faves:{cfg['min_likes']} "
                  f"since:{since:%Y-%m-%d}")
         r = requests.get(
