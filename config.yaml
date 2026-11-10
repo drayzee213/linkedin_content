@@ -1,0 +1,30 @@
+# ---------- Was der Bot sucht ----------
+x_source: official          # "official" (X API v2) oder "thirdparty" (twitterapi.io)
+queries:                    # Suchbegriffe (X-Suchsyntax, englisch liefert die meisten Videos)
+  - '"AI agent" OR "AI agents" demo'
+  - 'LLM OR "language model" launch'
+  - 'robotics OR humanoid robot'
+  - '"open source" AI tool'
+  - 'automation workflow AI'
+accounts: []                # optional: nur/zusätzlich diese X-Accounts, z. B. [OpenAI, AnthropicAI]
+blocked_accounts: []        # von diesen Accounts nie etwas vorschlagen
+tweet_lang: en
+max_results_per_query: 25   # offizielle API rechnet pro gelesenem Post ab -> klein halten
+max_age_hours: 48
+min_likes: 200
+video_min_seconds: 5
+video_max_seconds: 600
+video_max_mb: 200
+
+# ---------- Wie viel vorgeschlagen wird ----------
+posts_per_run: 1            # Vorschläge pro Lauf (Läufe: siehe .github/workflows/scout.yml)
+llm_candidates: 15          # so viele Top-Kandidaten bekommt das Sprachmodell zur Auswahl
+pending_expire_hours: 48    # unbeantwortete Vorschläge verfallen danach
+
+# ---------- Wie der LinkedIn-Post klingt ----------
+niche: "KI & Automatisierung, Tech & Software"
+tone: "sachlich-einordnend: kurz erklären, was im Video zu sehen ist, dann fachlich einordnen (Was bedeutet das? Für wen relevant?). Du-Form, höchstens 1-2 Emojis."
+hashtags_base: ["#KI", "#Automatisierung", "#Tech"]
+source_link_in_post: false  # true = Link zum Original-Tweet in den Post (kostet etwas Reichweite)
+model: claude-opus-5-5
+linkedin_version: "202610"  # LinkedIn-API-Version (JJJJMM), ca. 1 Jahr gültig
