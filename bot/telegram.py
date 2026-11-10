@@ -31,12 +31,31 @@ def send(text: str, buttons: list | None = None, reply_to: int | None = None) ->
 
 
 def send_video(video_url: str, caption: str) -> None:
-    """Video-Vorschau. Telegram lädt per URL nur bis ca. 20 MB; sonst reicht der Link."""
+    """Video-Vorschau: erst per URL, sonst selbst herunterladen und hochladen (bis 50 MB)."""
     try:
         _call("sendVideo", chat_id=chat_id(), video=video_url, caption=caption[:1024],
               parse_mode="HTML", supports_streaming=True)
-    except Exception as e:  # zu groß o. Ä.
-        print(f"sendVideo fehlgeschlagen ({e}), sende Link.")
+        return
+    except Exception as e:
+        print(f"sendVideo per URL fehlgeschlagen ({e}), lade Datei hoch.")
+    try:
+        data = b""
+        with requests.get(video_url, stream=True, timeout=TIMEOUT) as r:
+            r.raise_for_status()
+            for chunk in r.iter_content(1 << 20):
+                data += chunk
+                if len(data) > 49 * (1 << 20):
+                    raise RuntimeError("Video größer als 49 MB")
+        token = os.environ["TELEGRAM_BOT_TOKEN"]
+        resp = requests.post(
+            f"https://api.telegram.org/bot{token}/sendVideo", timeout=300,
+            data={"chat_id": chat_id(), "caption": caption[:1024], "parse_mode": "HTML",
+                  "supports_streaming": "true"},
+            files={"video": ("video.mp4", data, "video/mp4")}).json()
+        if not resp.get("ok"):
+            raise RuntimeError(resp.get("description"))
+    except Exception as e:
+        print(f"Video-Upload fehlgeschlagen ({e}), sende Link.")
         send(caption + f'\n\n<a href="{html.escape(video_url)}">Video ansehen</a>')
 
 
