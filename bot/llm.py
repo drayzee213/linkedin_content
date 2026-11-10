@@ -112,7 +112,9 @@ def select_and_draft(cfg: dict, state: dict, cands: list[dict]) -> list[Pick]:
     user = (f"Hier sind {len(cands)} Video-Tweets. Wähle die {n} besten für die Nische und den "
             f"Geschmack der Person aus (höchstens {n}). Halte dich streng an die Nische und ihre "
             f"Ausschlüsse: Wenn nichts wirklich passt, gib eine leere Liste zurück, statt "
-            f"etwas Halbpassendes, Werbung oder Engagement-Bait vorzuschlagen) und schreibe zu jedem "
+            f"etwas Halbpassendes, Werbung oder Engagement-Bait vorzuschlagen. Bei gleicher "
+            f"Passung bevorzuge kurze Videos (unter 90 Sekunden) mit einem klar benennbaren "
+            f"Tool oder Effekt) und schreibe zu jedem "
             f"den LinkedIn-Post.\n\n{listing}")
     valid = {c["id"] for c in cands}
     picks = _parse(cfg, _system(cfg, state), user, Selection).picks

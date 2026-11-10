@@ -12,6 +12,7 @@ from email.utils import parsedate_to_datetime
 import requests
 
 TIMEOUT = 30
+THIRDPARTY_PAUSE = 6
 
 
 def _best_mp4(variants: list, bitrate_key: str) -> str | None:
@@ -132,14 +133,24 @@ def search_thirdparty(cfg: dict) -> list[dict]:
         query = (f"{q} filter:native_video -filter:retweets -filter:replies "
                  f"lang:{cfg['tweet_lang']} min_faves:{cfg['min_likes']} "
                  f"since:{since:%Y-%m-%d}")
-        r = requests.get(
-            "https://api.twitterapi.io/twitter/tweet/advanced_search",
-            headers={"X-API-Key": key},
-            params={"query": query, "queryType": "Top"},
-            timeout=TIMEOUT,
-        )
+        for attempt in range(4):
+            if out or attempt:
+                time.sleep(THIRDPARTY_PAUSE * (attempt + 1))  # Tarif erlaubt nur wenige Anfragen pro Minute
+            r = requests.get(
+                "https://api.twitterapi.io/twitter/tweet/advanced_search",
+                headers={"X-API-Key": key},
+                params={"query": query, "queryType": "Top"},
+                timeout=TIMEOUT,
+            )
+            if r.status_code != 429:
+                break
+        if r.status_code == 429:
+            print("twitterapi.io: Rate-Limit, überspringe restliche Suchbegriffe.")
+            break
         r.raise_for_status()
-        out += parse_thirdparty(r.json())
+        found = parse_thirdparty(r.json())
+        print(f"{len(found)} Videos für: {q[:60]}")
+        out += found
     return out
 
 
