@@ -1,11 +1,12 @@
 {
- "tg_offset": 767934331,
+ "tg_offset": 767934333,
  "seen": [
   "2120181756305559721",
   "2049027740456866013",
   "2117267137614205029",
   "2119808000768741439",
-  "2120202665506337012"
+  "2120202665506337012",
+  "2120248196584648758"
  ],
  "pending": {
   "2120181756305559721": {
@@ -43,14 +44,14 @@
    "duration": 4.783,
    "video_url": "https://video.twimg.com/amplify_video/2049027263002513409/vid/avc1/960x960/LZkfk9i5DyiVlaSz.mp4?tag=21",
    "reason": "Von dir eingereicht",
-   "post_text": "Ein animierter Ordner-Charakter aus fünf Tools, von ChatGPT über Figma bis After Effects und CapCut. Mich interessiert daran weniger das einzelne Programm als die Aufteilung der Arbeit. Der Charakter kommt aus ChatGPT, das Design aus Figma, die Bewegung aus Grok, und zusammengeführt wird alles als Prototyp in After Effects. Für verspielte UI-Figuren ist das ein pragmatischer Weg zu einem animierten Entwurf.",
+   "post_text": "Ein animierter Ordner-Charakter aus fünf Tools, mit ChatGPT, Figma, Grok, After Effects und CapCut. Mich interessiert vor allem das Zusammenspiel aus generierter Grafik und von Hand gemachtem Design. Figur und Bewegung kommen aus der KI, Gestaltung und Prototyp entstehen in Figma und After Effects. Die gestalterische Kontrolle bleibt so beim Designer.",
    "hashtags": [
     "#MotionDesign",
     "#AfterEffects",
     "#Animation"
    ],
    "sent": 1794357045,
-   "msg_id": 9
+   "msg_id": 20
   },
   "2117267137614205029": {
    "id": "2117267137614205029",
@@ -117,6 +118,28 @@
    ],
    "sent": 1794408097,
    "msg_id": 17
+  },
+  "2120248196584648758": {
+   "id": "2120248196584648758",
+   "url": "https://x.com/AlexPi194641/status/2120248196584648758",
+   "text": "Wait, Fable 5.2 is already out?! 😅 I'm still on Opus 5.5.\nOne prompt?! Nope. 580+ notes.\n\nNo generated frames. A real film VFX pipeline, built the way I run it with my team on movies. Blender, Houdini, Nuke... I directed every shape, every timing, every gust of wind, down to the smallest detail.\n\nAnd I never touched anything by hand. I just sat and talked to Claude.\n\nStill a WIP, plenty is crooked.\n\nNot a replacement for artists. A whole new way of talking to our tools.\nIs this the new CGI pipeline? 👀\n\n@claudeai #VFX #CGI",
+   "author": "AlexPi194641",
+   "author_name": "Alex Pi | Creative Director",
+   "likes": 638,
+   "reposts": 39,
+   "views": 27677,
+   "created": 1794341537,
+   "duration": 28.0,
+   "video_url": "https://video-s.twimg.com/amplify_video/2120244164918972416/vid/avc1/1920x820/Hsk4gbM1Jq5Rg73u.mp4?tag=29",
+   "reason": "Von dir eingereicht",
+   "post_text": "Eine echte VFX-Pipeline in Blender, Houdini und Nuke, komplett über Gespräche mit Claude gesteuert. Keine generierten Frames, sondern klassisches CGI, bei dem jede Form, jedes Timing und jeder Windstoß über mehr als 580 Anweisungen festgelegt wurde, ohne selbst Hand anzulegen. Interessant finde ich daran, dass die KI hier die Tools bedient und die Regie beim Artist bleibt. Laut Autor noch Work in Progress mit einigen schiefen Stellen.",
+   "hashtags": [
+    "#VFX",
+    "#MotionDesign",
+    "#Blender"
+   ],
+   "sent": 1794409423,
+   "msg_id": 19
   }
  },
  "feedback": [
@@ -141,6 +164,13 @@
    "text": "I think I'm building the best animation workflow I've ever designed.\n\nPNG/PSD of a Character -&gt; SVG Rigged Puppet -&gt; Keyframes -&gt; Interpolation LoRA -&gt; Agentic Retrace in Harmony\n\nEvery step from rigging to tweening agentically done with human oversight. https://t.co/ujwbhjBFsr",
    "note": "selbst eingereicht",
    "ts": 1794357049
+  },
+  {
+   "verdict": "like",
+   "author": "AlexPi194641",
+   "text": "Wait, Fable 5.2 is already out?! 😅 I'm still on Opus 5.5.\nOne prompt?! Nope. 580+ notes.\n\nNo generated frames. A real film VFX pipeline, built the way I run it with my team on movies. Blender, Houdini, Nuke... I directed every shape, every timing, every gust of wind, down to the smallest detail.\n\nAnd I never touched anything by hand. I just sat and talked to Claude.\n\nStill a WIP, plenty is crooked",
+   "note": "selbst eingereicht",
+   "ts": 1794409415
   }
  ],
  "style_notes": [],
