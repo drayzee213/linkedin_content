@@ -3,7 +3,8 @@
  "seen": [
   "2120181756305559721",
   "2049027740456866013",
-  "2117267137614205029"
+  "2117267137614205029",
+  "2119808000768741439"
  ],
  "pending": {
   "2120181756305559721": {
@@ -71,6 +72,28 @@
    ],
    "sent": 1794357060,
    "msg_id": 11
+  },
+  "2119808000768741439": {
+   "id": "2119808000768741439",
+   "url": "https://x.com/Navedux/status/2119808000768741439",
+   "text": "my take on this. mostly webgl and custom code, with a little https://t.co/dYm6F7C6V1 shader style mixed in https://t.co/mvRS0OdBoe",
+   "author": "Navedux",
+   "author_name": "Naved",
+   "likes": 1784,
+   "reposts": 101,
+   "views": 46355,
+   "created": 1794236586,
+   "duration": 12.0,
+   "video_url": "https://video.twimg.com/amplify_video/2119807587805990912/vid/avc1/1080x1080/cVsR2JxoGEyupoR4.mp4?tag=29",
+   "reason": "Handwerkliches Web-Gimmick: WebGL und Custom Code mit Shader-Look, 12 Sekunden kurz. Es ist keine Promo und keine generative KI. Passt zu Creative Coding und WebGL in der Nische.",
+   "post_text": "Diese kurze WebGL-Arbeit von Navedux zeigt, wie viel Bewegung mit Custom Code und etwas Shader-Stil im Browser steckt. Laut Autor ist das meiste selbst geschrieben, ein Shader-Look ist nur dezent beigemischt. Für Motion Designer finde ich solche Arbeiten interessant, weil sich hier Animation und Code nicht mehr trennen lassen. Gerade bei Web-Projekten wird dieses Zusammenspiel immer mehr zum eigentlichen Handwerk.",
+   "hashtags": [
+    "#MotionDesign",
+    "#WebGL",
+    "#CreativeCoding"
+   ],
+   "sent": 1794385598,
+   "msg_id": 13
   }
  },
  "feedback": [
