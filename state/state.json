@@ -1,7 +1,9 @@
 {
- "tg_offset": 767934329,
+ "tg_offset": 767934331,
  "seen": [
-  "2120181756305559721"
+  "2120181756305559721",
+  "2049027740456866013",
+  "2117267137614205029"
  ],
  "pending": {
   "2120181756305559721": {
@@ -25,6 +27,50 @@
    ],
    "sent": 1794338117,
    "msg_id": 3
+  },
+  "2049027740456866013": {
+   "id": "2049027740456866013",
+   "url": "https://x.com/tranmautritam/status/2049027740456866013",
+   "text": "5 tools, 1 animated folder character\n\nChatGPT for character\nFigma for design\nGrok for animation\nAfter Effects for prototype\nCapCut for sound\n\nDidn't expect this workflow to work 👀 https://t.co/1vva4mC5Uy",
+   "author": "tranmautritam",
+   "author_name": "Tran Mau Tri Tam ✪",
+   "likes": 769,
+   "reposts": 46,
+   "views": 34651,
+   "created": 1777361257,
+   "duration": 4.783,
+   "video_url": "https://video.twimg.com/amplify_video/2049027263002513409/vid/avc1/960x960/LZkfk9i5DyiVlaSz.mp4?tag=21",
+   "reason": "Von dir eingereicht",
+   "post_text": "Ein animierter Ordner-Charakter aus fünf Tools, von ChatGPT über Figma bis After Effects und CapCut. Mich interessiert daran weniger das einzelne Programm als die Aufteilung der Arbeit. Der Charakter kommt aus ChatGPT, das Design aus Figma, die Bewegung aus Grok, und zusammengeführt wird alles als Prototyp in After Effects. Für verspielte UI-Figuren ist das ein pragmatischer Weg zu einem animierten Entwurf.",
+   "hashtags": [
+    "#MotionDesign",
+    "#AfterEffects",
+    "#Animation"
+   ],
+   "sent": 1794357045,
+   "msg_id": 9
+  },
+  "2117267137614205029": {
+   "id": "2117267137614205029",
+   "url": "https://x.com/araminta_k/status/2117267137614205029",
+   "text": "I think I'm building the best animation workflow I've ever designed.\n\nPNG/PSD of a Character -&gt; SVG Rigged Puppet -&gt; Keyframes -&gt; Interpolation LoRA -&gt; Agentic Retrace in Harmony\n\nEvery step from rigging to tweening agentically done with human oversight. https://t.co/ujwbhjBFsr",
+   "author": "araminta_k",
+   "author_name": "Araminta",
+   "likes": 352,
+   "reposts": 29,
+   "views": 27564,
+   "created": 1793630797,
+   "duration": 6.3,
+   "video_url": "https://video.twimg.com/amplify_video/2117267032911810560/vid/avc1/2062x1496/FXzJX2ZnUI7raPH5.mp4?tag=29",
+   "reason": "Von dir eingereicht",
+   "post_text": "Ein KI-Workflow, der Rigging und Tweening für 2D-Figuren übernimmt, bis zum Retrace in Harmony. Aus PNG oder PSD wird ein geriggtes SVG-Puppet, nach den Keyframes füllt eine Interpolation-LoRA die Zwischenphasen. Mir gefällt, dass die KI hier keine Bilder erfindet, sondern klassische Handarbeit abnimmt und ein Mensch jeden Schritt kontrolliert.",
+   "hashtags": [
+    "#Animation",
+    "#MotionDesign",
+    "#2DAnimation"
+   ],
+   "sent": 1794357060,
+   "msg_id": 11
   }
  },
  "feedback": [
@@ -35,6 +81,20 @@
    "note": "Tool an sich gut, aber das Video ist ein Werbevideo/Promo-Trailer für das Tool. Zu werblich.",
    "ts": 1794339812,
    "ask_msg": 5
+  },
+  {
+   "verdict": "like",
+   "author": "tranmautritam",
+   "text": "5 tools, 1 animated folder character\n\nChatGPT for character\nFigma for design\nGrok for animation\nAfter Effects for prototype\nCapCut for sound\n\nDidn't expect this workflow to work 👀 https://t.co/1vva4mC5Uy",
+   "note": "selbst eingereicht",
+   "ts": 1794357036
+  },
+  {
+   "verdict": "like",
+   "author": "araminta_k",
+   "text": "I think I'm building the best animation workflow I've ever designed.\n\nPNG/PSD of a Character -&gt; SVG Rigged Puppet -&gt; Keyframes -&gt; Interpolation LoRA -&gt; Agentic Retrace in Harmony\n\nEvery step from rigging to tweening agentically done with human oversight. https://t.co/ujwbhjBFsr",
+   "note": "selbst eingereicht",
+   "ts": 1794357049
   }
  ],
  "style_notes": [],
