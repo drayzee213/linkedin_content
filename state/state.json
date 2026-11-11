@@ -6,7 +6,8 @@
   "2117267137614205029",
   "2119808000768741439",
   "2120202665506337012",
-  "2120248196584648758"
+  "2120248196584648758",
+  "2120561192288563679"
  ],
  "pending": {
   "2120181756305559721": {
@@ -140,6 +141,28 @@
    ],
    "sent": 1794409423,
    "msg_id": 19
+  },
+  "2120561192288563679": {
+   "id": "2120561192288563679",
+   "url": "https://x.com/80Level/status/2120561192288563679",
+   "text": "This free Blender add-on lets you visually edit animation directly in the viewport instead of working in the Graph Editor.\n\nDownload Editable Motion Paths: https://t.co/RiSttoZ4SB https://t.co/pa3ZQC0Wti",
+   "author": "80Level",
+   "author_name": "80 LEVEL",
+   "likes": 545,
+   "reposts": 35,
+   "views": 14409,
+   "created": 1794416161,
+   "duration": 11.0,
+   "video_url": "https://video.twimg.com/amplify_video/2120561179655348224/vid/avc1/1280x720/JHz13meWJb97YUuR.mp4?tag=16",
+   "reason": "Konkretes Blender-Add-on, das einen echten Animations-Arbeitsschritt verbessert: Motion Paths direkt im Viewport editieren statt im Graph Editor. Kurzes Video (11 s), vermutlich das Tool im Einsatz. Gepostet von 80Level, nicht als Launch-Promo des Entwicklers.",
+   "post_text": "Editable Motion Paths ist ein Blender-Add-on, mit dem man Animation direkt im Viewport bearbeitet statt im Graph Editor. Für mich ist das vor allem bei Bewegungsbahnen sinnvoll, die man räumlich besser beurteilt als über Kurven. Gerade für Motion Designer, die aus After Effects kommen und dort mit Pfaden arbeiten, könnte das den Einstieg in Blender-Animation deutlich angenehmer machen.",
+   "hashtags": [
+    "#MotionDesign",
+    "#Blender",
+    "#Animation"
+   ],
+   "sent": 1794435309,
+   "msg_id": 25
   }
  },
  "feedback": [
