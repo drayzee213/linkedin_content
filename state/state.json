@@ -7,7 +7,8 @@
   "2119808000768741439",
   "2120202665506337012",
   "2120248196584648758",
-  "2120561192288563679"
+  "2120561192288563679",
+  "2120636604624560229"
  ],
  "pending": {
   "2120181756305559721": {
@@ -163,6 +164,28 @@
    ],
    "sent": 1794435309,
    "msg_id": 25
+  },
+  "2120636604624560229": {
+   "id": "2120636604624560229",
+   "url": "https://x.com/pingouh/status/2120636604624560229",
+   "text": "I wanted to test Fable 5.2 on something that felt impossible for me to code: complex behaviours for a creature.\n\nThe starting point: a Three.js prototype. A little robotic biped living its own life, animated entirely by code. A lot of movement research went into it: getting it to walk, then run, then gallop without falling over, feet that actually plant on the ground, a head and neck that go looking for things, simulating hundreds of lives to see where it trips and fixing that. Alongside, a few reference sketches and visual research. \n\nThen I decided to try it in Unreal 5.8 and to make it controllable.\n\nNo pre-recorded animation; everything is computed. All done in 2 days. Sound design is bad and world a bit random.\n\nThe video is me playing around  with my PS5 controller.",
+   "author": "pingouh",
+   "author_name": "Julien Martorell",
+   "likes": 630,
+   "reposts": 34,
+   "views": 27262,
+   "created": 1794434140,
+   "duration": 71.52,
+   "video_url": "https://video.twimg.com/amplify_video/2120635243942035456/vid/avc1/1920x1080/xplybB2Ge8kL4dId.mp4?tag=29",
+   "reason": "Prozedurale Character-Animation per Code (Three.js, dann Unreal 5.8): Laufen, Rennen, Galopp, Foot Planting, ohne vorproduzierte Animation. Handwerklich interessant, eine echte Demo statt Promo, kein generatives Video und unter 90 Sekunden.",
+   "post_text": "Ein Roboter-Zweibeiner, der komplett per Code animiert ist, zuerst in Three.js und dann steuerbar in Unreal 5.8. Es gibt keine einzige vorproduzierte Animation. Gehen, Rennen, Galopp, Füße mit echtem Bodenkontakt und ein suchender Kopf werden alle live berechnet. Spannend finde ich den Ansatz, hunderte Durchläufe zu simulieren, um zu sehen, wo die Figur stolpert. Für Character-Animation ist das ein anderer Denkansatz als Keyframes.",
+   "hashtags": [
+    "#Animation",
+    "#ProceduralAnimation",
+    "#CreativeCoding"
+   ],
+   "sent": 1794497690,
+   "msg_id": 27
   }
  },
  "feedback": [
