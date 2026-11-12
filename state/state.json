@@ -8,31 +8,10 @@
   "2120202665506337012",
   "2120248196584648758",
   "2120561192288563679",
-  "2120636604624560229"
+  "2120636604624560229",
+  "2120884677087219881"
  ],
  "pending": {
-  "2120181756305559721": {
-   "id": "2120181756305559721",
-   "url": "https://x.com/daveylovescode/status/2120181756305559721",
-   "text": "Day 2 of dropping a free After Effects tool every day until Adobe hires me.\n\nThis is Curvy. It's the curve editor you've been asking me for, and it's free. https://t.co/gNWF7t6bvi",
-   "author": "daveylovescode",
-   "author_name": "Davey",
-   "likes": 176,
-   "reposts": 5,
-   "views": 4070,
-   "created": 1794325696,
-   "duration": 43.733,
-   "video_url": "https://video.twimg.com/amplify_video/2120177073126084608/vid/avc1/1080x924/SIqw79fK3Ke4mW8A.mp4?tag=29",
-   "reason": "Klar benennbares, kostenloses After Effects Tool (Curve Editor), kurzes Video, direkt relevant für den Keyframe- und Easing-Workflow. Keine generative KI, keine Kurswerbung.",
-   "post_text": "Curvy ist ein neuer, kostenloser Curve Editor für After Effects, gebaut von einem unabhängigen Entwickler. Der Graph Editor in AE ist für viele der zäheste Teil beim Feintuning von Easing, deshalb finde ich jedes Werkzeug interessant, das diesen Schritt direkter macht. Curvy ist Tag 2 einer Reihe, in der er täglich ein freies AE Tool veröffentlicht. Die nächsten Tage behalte ich im Blick.",
-   "hashtags": [
-    "#MotionDesign",
-    "#AfterEffects",
-    "#Animation"
-   ],
-   "sent": 1794338117,
-   "msg_id": 3
-  },
   "2049027740456866013": {
    "id": "2049027740456866013",
    "url": "https://x.com/tranmautritam/status/2049027740456866013",
@@ -186,6 +165,28 @@
    ],
    "sent": 1794497690,
    "msg_id": 27
+  },
+  "2120884677087219881": {
+   "id": "2120884677087219881",
+   "url": "https://x.com/Stefan_3D_AI/status/2120884677087219881",
+   "text": "New AI rigging tool by @DeemosTech!\nI tested Rodin on a human, a cat and a custom scorpion.\nAI skeleton generation, physics bones, animation editing and custom creature rigging.\nThen I show you, how you can connect Blender MCP + Claude Opus 5.5 to generate 3 scorpion animations.\nhttps://t.co/ppaVw3NoOn \n\n#AI #3D #Blender #GameDev #Rigging",
+   "author": "Stefan_3D_AI",
+   "author_name": "Stefan 3D AI",
+   "likes": 146,
+   "reposts": 9,
+   "views": 4560,
+   "created": 1794493285,
+   "duration": 55.13,
+   "video_url": "https://video.twimg.com/amplify_video/2120884080564994048/vid/avc1/2560x1440/IUjzfUWHvBmiVSgi.mp4?tag=29",
+   "reason": "KI verbessert einen echten Arbeitsschritt (Rigging), gezeigt im Einsatz an verschiedenen Kreaturen statt als Promo-Trailer. Dazu ein Blender-MCP-Workflow für Animationen. 55 Sekunden, Tool klar benennbar.",
+   "post_text": "Rodin von DeemosTech erzeugt Skelette per KI, hier an Mensch, Katze und einem eigenen Skorpion gezeigt. Interessant finde ich vor allem das Custom Creature Rigging inklusive Physics Bones, denn bei Vierbeinern und Insekten kostet das Rigging sonst die meiste Zeit. Die Animationen für den Skorpion entstehen danach in Blender über MCP mit Claude Opus 5.5.",
+   "hashtags": [
+    "#MotionDesign",
+    "#Blender",
+    "#Rigging"
+   ],
+   "sent": 1794520538,
+   "msg_id": 29
   }
  },
  "feedback": [
