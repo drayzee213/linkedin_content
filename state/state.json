@@ -10,31 +10,10 @@
   "2120561192288563679",
   "2120636604624560229",
   "2120884677087219881",
-  "2120818902158761997"
+  "2120818902158761997",
+  "2120809570344050705"
  ],
  "pending": {
-  "2120248196584648758": {
-   "id": "2120248196584648758",
-   "url": "https://x.com/AlexPi194641/status/2120248196584648758",
-   "text": "Wait, Fable 5.2 is already out?! 😅 I'm still on Opus 5.5.\nOne prompt?! Nope. 580+ notes.\n\nNo generated frames. A real film VFX pipeline, built the way I run it with my team on movies. Blender, Houdini, Nuke... I directed every shape, every timing, every gust of wind, down to the smallest detail.\n\nAnd I never touched anything by hand. I just sat and talked to Claude.\n\nStill a WIP, plenty is crooked.\n\nNot a replacement for artists. A whole new way of talking to our tools.\nIs this the new CGI pipeline? 👀\n\n@claudeai #VFX #CGI",
-   "author": "AlexPi194641",
-   "author_name": "Alex Pi | Creative Director",
-   "likes": 638,
-   "reposts": 39,
-   "views": 27677,
-   "created": 1794341537,
-   "duration": 28.0,
-   "video_url": "https://video-s.twimg.com/amplify_video/2120244164918972416/vid/avc1/1920x820/Hsk4gbM1Jq5Rg73u.mp4?tag=29",
-   "reason": "Von dir eingereicht",
-   "post_text": "Eine echte VFX-Pipeline in Blender, Houdini und Nuke, komplett über Gespräche mit Claude gesteuert. Keine generierten Frames, sondern klassisches CGI, bei dem jede Form, jedes Timing und jeder Windstoß über mehr als 580 Anweisungen festgelegt wurde, ohne selbst Hand anzulegen. Interessant finde ich daran, dass die KI hier die Tools bedient und die Regie beim Artist bleibt. Laut Autor noch Work in Progress mit einigen schiefen Stellen.",
-   "hashtags": [
-    "#VFX",
-    "#MotionDesign",
-    "#Blender"
-   ],
-   "sent": 1794409423,
-   "msg_id": 19
-  },
   "2120561192288563679": {
    "id": "2120561192288563679",
    "url": "https://x.com/80Level/status/2120561192288563679",
@@ -122,6 +101,28 @@
    ],
    "sent": 1794581595,
    "msg_id": 31
+  },
+  "2120809570344050705": {
+   "id": "2120809570344050705",
+   "url": "https://x.com/mxvdl/status/2120809570344050705",
+   "text": "For the people interested by the @threejs ligthweight brush stroke shader and overal animation I posted yesterday, here's a complete breakdown.\n\nStill fully made with Fable 5.2 @claudeai \n\n(Yes you can also create these easily) https://t.co/x2pE4S9a8N",
+   "author": "mxvdl",
+   "author_name": "Max Vedel",
+   "likes": 607,
+   "reposts": 25,
+   "views": 23248,
+   "created": 1794475378,
+   "duration": 100.074,
+   "video_url": "https://video.twimg.com/amplify_video/2120808418629791744/vid/avc1/1920x1080/S1MrGh1B9N6dsNsN.mp4?tag=29",
+   "reason": "Ein echter Breakdown eines Three.js-Brush-Stroke-Shaders samt Animation statt eines Promo-Trailers. Das ist Creative Coding mit KI als Code-Werkzeug ohne generierte Frames und passt damit zu den positiv bewerteten Pipeline-Beispielen.",
+   "post_text": "Ein Breakdown zu einem leichtgewichtigen Brush-Stroke-Shader in Three.js und der Animation dazu. Mich interessiert daran weniger der Look als der Weg dorthin. Der Pinselstrich entsteht komplett im Code, gebaut mit Claude (Fable 5.2), und das Ergebnis läuft im Browser. Für Motion Designer ist das ein greifbares Beispiel, wie man einen handgemachten Stil ins Web bringt.",
+   "hashtags": [
+    "#MotionDesign",
+    "#ThreeJS",
+    "#CreativeCoding"
+   ],
+   "sent": 1794605760,
+   "msg_id": 33
   }
  },
  "feedback": [
