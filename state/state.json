@@ -9,97 +9,10 @@
   "2120248196584648758",
   "2120561192288563679",
   "2120636604624560229",
-  "2120884677087219881"
+  "2120884677087219881",
+  "2120818902158761997"
  ],
  "pending": {
-  "2049027740456866013": {
-   "id": "2049027740456866013",
-   "url": "https://x.com/tranmautritam/status/2049027740456866013",
-   "text": "5 tools, 1 animated folder character\n\nChatGPT for character\nFigma for design\nGrok for animation\nAfter Effects for prototype\nCapCut for sound\n\nDidn't expect this workflow to work 👀 https://t.co/1vva4mC5Uy",
-   "author": "tranmautritam",
-   "author_name": "Tran Mau Tri Tam ✪",
-   "likes": 769,
-   "reposts": 46,
-   "views": 34651,
-   "created": 1777361257,
-   "duration": 4.783,
-   "video_url": "https://video.twimg.com/amplify_video/2049027263002513409/vid/avc1/960x960/LZkfk9i5DyiVlaSz.mp4?tag=21",
-   "reason": "Von dir eingereicht",
-   "post_text": "Ein animierter Ordner-Charakter aus fünf Tools, mit ChatGPT, Figma, Grok, After Effects und CapCut. Mich interessiert vor allem das Zusammenspiel aus generierter Grafik und von Hand gemachtem Design. Figur und Bewegung kommen aus der KI, Gestaltung und Prototyp entstehen in Figma und After Effects. Die gestalterische Kontrolle bleibt so beim Designer.",
-   "hashtags": [
-    "#MotionDesign",
-    "#AfterEffects",
-    "#Animation"
-   ],
-   "sent": 1794357045,
-   "msg_id": 20
-  },
-  "2117267137614205029": {
-   "id": "2117267137614205029",
-   "url": "https://x.com/araminta_k/status/2117267137614205029",
-   "text": "I think I'm building the best animation workflow I've ever designed.\n\nPNG/PSD of a Character -&gt; SVG Rigged Puppet -&gt; Keyframes -&gt; Interpolation LoRA -&gt; Agentic Retrace in Harmony\n\nEvery step from rigging to tweening agentically done with human oversight. https://t.co/ujwbhjBFsr",
-   "author": "araminta_k",
-   "author_name": "Araminta",
-   "likes": 352,
-   "reposts": 29,
-   "views": 27564,
-   "created": 1793630797,
-   "duration": 6.3,
-   "video_url": "https://video.twimg.com/amplify_video/2117267032911810560/vid/avc1/2062x1496/FXzJX2ZnUI7raPH5.mp4?tag=29",
-   "reason": "Von dir eingereicht",
-   "post_text": "Ein KI-Workflow, der Rigging und Tweening für 2D-Figuren übernimmt, bis zum Retrace in Harmony. Aus PNG oder PSD wird ein geriggtes SVG-Puppet, nach den Keyframes füllt eine Interpolation-LoRA die Zwischenphasen. Mir gefällt, dass die KI hier keine Bilder erfindet, sondern klassische Handarbeit abnimmt und ein Mensch jeden Schritt kontrolliert.",
-   "hashtags": [
-    "#Animation",
-    "#MotionDesign",
-    "#2DAnimation"
-   ],
-   "sent": 1794357060,
-   "msg_id": 11
-  },
-  "2119808000768741439": {
-   "id": "2119808000768741439",
-   "url": "https://x.com/Navedux/status/2119808000768741439",
-   "text": "my take on this. mostly webgl and custom code, with a little https://t.co/dYm6F7C6V1 shader style mixed in https://t.co/mvRS0OdBoe",
-   "author": "Navedux",
-   "author_name": "Naved",
-   "likes": 1784,
-   "reposts": 101,
-   "views": 46355,
-   "created": 1794236586,
-   "duration": 12.0,
-   "video_url": "https://video.twimg.com/amplify_video/2119807587805990912/vid/avc1/1080x1080/cVsR2JxoGEyupoR4.mp4?tag=29",
-   "reason": "Handwerkliches Web-Gimmick: WebGL und Custom Code mit Shader-Look, 12 Sekunden kurz. Es ist keine Promo und keine generative KI. Passt zu Creative Coding und WebGL in der Nische.",
-   "post_text": "Diese kurze WebGL-Arbeit von Navedux zeigt, wie viel Bewegung mit Custom Code und etwas Shader-Stil im Browser steckt. Laut Autor ist das meiste selbst geschrieben, ein Shader-Look ist nur dezent beigemischt. Für Motion Designer finde ich solche Arbeiten interessant, weil sich hier Animation und Code nicht mehr trennen lassen. Gerade bei Web-Projekten wird dieses Zusammenspiel immer mehr zum eigentlichen Handwerk.",
-   "hashtags": [
-    "#MotionDesign",
-    "#WebGL",
-    "#CreativeCoding"
-   ],
-   "sent": 1794385598,
-   "msg_id": 13
-  },
-  "2120202665506337012": {
-   "id": "2120202665506337012",
-   "url": "https://x.com/thespite/status/2120202665506337012",
-   "text": "[vibe-]codevember 2026 - Day 9 - Membrane \n\nhttps://t.co/4s5qjqOYCg\n\n#threejs https://t.co/8ZCKlUSzZX",
-   "author": "thespite",
-   "author_name": "Jaume Sanchez Elias 🇺🇦",
-   "likes": 245,
-   "reposts": 25,
-   "views": 8685,
-   "created": 1794330681,
-   "duration": 30.0,
-   "video_url": "https://video.twimg.com/amplify_video/2120192472135401472/vid/avc1/1080x1080/20Z8yJe5jBwO3X8h.mp4?tag=29",
-   "reason": "Creative Coding mit Three.js und WebGL aus der Codevember-Reihe, ohne Promo-Ton. Das Ergebnis steht im Vordergrund und ist ein kurzes Video mit klar benennbarer Technik.",
-   "post_text": "\"Membrane\" ist Tag 9 von thespites Codevember-Reihe und eine Three.js-Studie, die zeigt, was WebGL im Browser kann. Mir gefällt an solchen Daily-Projekten, dass ein einzelner Effekt sauber ausgearbeitet wird statt einer ganzen Website. Das \"vibe-\" im Titel deutet an, dass beim Coden KI mitgeholfen hat. Für Motion Designer, die Richtung Web und Creative Coding schauen, ist das eine gute Referenz für Bewegung, die live im Browser läuft.",
-   "hashtags": [
-    "#MotionDesign",
-    "#threejs",
-    "#CreativeCoding"
-   ],
-   "sent": 1794408097,
-   "msg_id": 17
-  },
   "2120248196584648758": {
    "id": "2120248196584648758",
    "url": "https://x.com/AlexPi194641/status/2120248196584648758",
@@ -187,6 +100,28 @@
    ],
    "sent": 1794520538,
    "msg_id": 29
+  },
+  "2120818902158761997": {
+   "id": "2120818902158761997",
+   "url": "https://x.com/greglalle/status/2120818902158761997",
+   "text": "Playing with gestures and micro-interactions to make text content more contextual and interactive. https://t.co/Mk8zjWckdQ",
+   "author": "greglalle",
+   "author_name": "greg",
+   "likes": 355,
+   "reposts": 10,
+   "views": 8690,
+   "created": 1794477603,
+   "duration": 14.55,
+   "video_url": "https://video.twimg.com/amplify_video/2120794339857047552/vid/avc1/720x900/hBVpKhg550rCBCl1.mp4?tag=14",
+   "reason": "Micro-Interactions und Gesten-Steuerung für Textinhalte. Das ist ein handwerkliches Web-Gimmick ohne generative KI und ohne Werbeton. Mit 15 Sekunden ist das Video kurz und der Effekt klar benennbar.",
+   "post_text": "Ein kurzes Experiment mit Gesten und Micro-Interactions, das Textinhalte interaktiv und kontextbezogen macht. Mir gefällt, dass Animation hier nicht als Deko dient. Sie hilft beim Lesen und Verstehen. Für Motion Designer, die in Richtung UI und Web arbeiten, ist das ein guter Denkanstoß, wie Bewegung Inhalt strukturieren kann.",
+   "hashtags": [
+    "#MotionDesign",
+    "#MicroInteractions",
+    "#UIDesign"
+   ],
+   "sent": 1794581595,
+   "msg_id": 31
   }
  },
  "feedback": [
