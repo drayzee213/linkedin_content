@@ -11,31 +11,10 @@
   "2120636604624560229",
   "2120884677087219881",
   "2120818902158761997",
-  "2120809570344050705"
+  "2120809570344050705",
+  "2120910879361548565"
  ],
  "pending": {
-  "2120561192288563679": {
-   "id": "2120561192288563679",
-   "url": "https://x.com/80Level/status/2120561192288563679",
-   "text": "This free Blender add-on lets you visually edit animation directly in the viewport instead of working in the Graph Editor.\n\nDownload Editable Motion Paths: https://t.co/RiSttoZ4SB https://t.co/pa3ZQC0Wti",
-   "author": "80Level",
-   "author_name": "80 LEVEL",
-   "likes": 545,
-   "reposts": 35,
-   "views": 14409,
-   "created": 1794416161,
-   "duration": 11.0,
-   "video_url": "https://video.twimg.com/amplify_video/2120561179655348224/vid/avc1/1280x720/JHz13meWJb97YUuR.mp4?tag=16",
-   "reason": "Konkretes Blender-Add-on, das einen echten Animations-Arbeitsschritt verbessert: Motion Paths direkt im Viewport editieren statt im Graph Editor. Kurzes Video (11 s), vermutlich das Tool im Einsatz. Gepostet von 80Level, nicht als Launch-Promo des Entwicklers.",
-   "post_text": "Editable Motion Paths ist ein Blender-Add-on, mit dem man Animation direkt im Viewport bearbeitet statt im Graph Editor. Für mich ist das vor allem bei Bewegungsbahnen sinnvoll, die man räumlich besser beurteilt als über Kurven. Gerade für Motion Designer, die aus After Effects kommen und dort mit Pfaden arbeiten, könnte das den Einstieg in Blender-Animation deutlich angenehmer machen.",
-   "hashtags": [
-    "#MotionDesign",
-    "#Blender",
-    "#Animation"
-   ],
-   "sent": 1794435309,
-   "msg_id": 25
-  },
   "2120636604624560229": {
    "id": "2120636604624560229",
    "url": "https://x.com/pingouh/status/2120636604624560229",
@@ -123,6 +102,28 @@
    ],
    "sent": 1794605760,
    "msg_id": 33
+  },
+  "2120910879361548565": {
+   "id": "2120910879361548565",
+   "url": "https://x.com/LexnLin/status/2120910879361548565",
+   "text": "I built a realistic bedroom with Fable 5.2 in threejs\n\neverything you see is code! (no pre-made 3d assets/textures were used) https://t.co/0QsYrhEWXj",
+   "author": "LexnLin",
+   "author_name": "Leon Lin",
+   "likes": 849,
+   "reposts": 23,
+   "views": 45830,
+   "created": 1794499532,
+   "duration": 45.0,
+   "video_url": "https://video.twimg.com/amplify_video/2120909786296295424/vid/avc1/3840x2160/ZzPOqGAcMZlV7SBb.mp4?tag=29",
+   "reason": "WebGL/Creative Coding mit three.js im echten Ergebnis. Die Szene wurde laut Tweet komplett per Code mit Fable 5.2 erstellt, ohne fertige Assets, also keine Bild- oder Videogenerierung. Das Video ist mit 45 Sekunden kurz, kein Promo-Ton, und es passt zum positiv bewerteten Fable-5.2-Pipeline-Beispiel.",
+   "post_text": "Ein realistisches Schlafzimmer in three.js, komplett als Code mit Fable 5.2 gebaut, ohne vorgefertigte 3D-Assets oder Texturen. Für mich ist das interessant, weil hier kein Bild generiert wird, sondern eine echte WebGL-Szene entsteht, die man weiter animieren und interaktiv machen kann. Für Web-Gimmicks und 3D-Prototypen im Browser wird die Einstiegshürde damit deutlich niedriger.",
+   "hashtags": [
+    "#MotionDesign",
+    "#threejs",
+    "#CreativeCoding"
+   ],
+   "sent": 1794664000,
+   "msg_id": 35
   }
  },
  "feedback": [
