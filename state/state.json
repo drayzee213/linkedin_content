@@ -13,31 +13,10 @@
   "2120818902158761997",
   "2120809570344050705",
   "2120910879361548565",
-  "2121559962572976465"
+  "2121559962572976465",
+  "2121655458914312436"
  ],
  "pending": {
-  "2120884677087219881": {
-   "id": "2120884677087219881",
-   "url": "https://x.com/Stefan_3D_AI/status/2120884677087219881",
-   "text": "New AI rigging tool by @DeemosTech!\nI tested Rodin on a human, a cat and a custom scorpion.\nAI skeleton generation, physics bones, animation editing and custom creature rigging.\nThen I show you, how you can connect Blender MCP + Claude Opus 5.5 to generate 3 scorpion animations.\nhttps://t.co/ppaVw3NoOn \n\n#AI #3D #Blender #GameDev #Rigging",
-   "author": "Stefan_3D_AI",
-   "author_name": "Stefan 3D AI",
-   "likes": 146,
-   "reposts": 9,
-   "views": 4560,
-   "created": 1794493285,
-   "duration": 55.13,
-   "video_url": "https://video.twimg.com/amplify_video/2120884080564994048/vid/avc1/2560x1440/IUjzfUWHvBmiVSgi.mp4?tag=29",
-   "reason": "KI verbessert einen echten Arbeitsschritt (Rigging), gezeigt im Einsatz an verschiedenen Kreaturen statt als Promo-Trailer. Dazu ein Blender-MCP-Workflow für Animationen. 55 Sekunden, Tool klar benennbar.",
-   "post_text": "Rodin von DeemosTech erzeugt Skelette per KI, hier an Mensch, Katze und einem eigenen Skorpion gezeigt. Interessant finde ich vor allem das Custom Creature Rigging inklusive Physics Bones, denn bei Vierbeinern und Insekten kostet das Rigging sonst die meiste Zeit. Die Animationen für den Skorpion entstehen danach in Blender über MCP mit Claude Opus 5.5.",
-   "hashtags": [
-    "#MotionDesign",
-    "#Blender",
-    "#Rigging"
-   ],
-   "sent": 1794520538,
-   "msg_id": 29
-  },
   "2120818902158761997": {
    "id": "2120818902158761997",
    "url": "https://x.com/greglalle/status/2120818902158761997",
@@ -125,6 +104,28 @@
    ],
    "sent": 1794686678,
    "msg_id": 37
+  },
+  "2121655458914312436": {
+   "id": "2121655458914312436",
+   "url": "https://x.com/ajc_builds/status/2121655458914312436",
+   "text": "What happens when you click a spider web?\n\nThe spiders think it’s dinner 🕷️\n\nDay 14 of #codevember: Tension\n\nReal web physics, super accurate spiders. Lure them in, or pull too hard and snap the web. Open sourced.\n\nLinks to play and the code in the comments. \n\n@threejs @mrdoob @akella  @reactthreefiber\n\n#codevember #threejs #webgpu",
+   "author": "ajc_builds",
+   "author_name": "Adam Chernick",
+   "likes": 286,
+   "reposts": 21,
+   "views": 10614,
+   "created": 1794677054,
+   "duration": 40.191,
+   "video_url": "https://video.twimg.com/amplify_video/2121655135147630592/vid/avc1/1376x1218/vdieitc2ZNYlpFOj.mp4?tag=29",
+   "reason": "Creative Coding mit Three.js und echter Netz-Physik, interaktives Web-Gimmick aus der Codevember-Reihe, Open Source und kein Promo-Ton. Passt genau zu WebGL und Micro-Interactions, kurzes Video mit klar benennbarer Technik.",
+   "post_text": "Ein Spinnennetz mit echter Physik in Three.js, bei dem ein Klick die Spinnen anlockt wie Beute. Entstanden für Codevember zum Thema Tension. Zieht man zu stark, reißt das Netz. Mir gefällt, wie viel Charakter eine simple Interaktion bekommt, wenn die Physik dahinter stimmt. Der Code ist Open Source und damit ein gutes Studienobjekt für alle, die mit React Three Fiber arbeiten.",
+   "hashtags": [
+    "#CreativeCoding",
+    "#threejs",
+    "#MotionDesign"
+   ],
+   "sent": 1794752213,
+   "msg_id": 39
   }
  },
  "feedback": [
