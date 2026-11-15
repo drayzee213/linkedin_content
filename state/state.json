@@ -14,31 +14,10 @@
   "2120809570344050705",
   "2120910879361548565",
   "2121559962572976465",
-  "2121655458914312436"
+  "2121655458914312436",
+  "2121627795566567577"
  ],
  "pending": {
-  "2120818902158761997": {
-   "id": "2120818902158761997",
-   "url": "https://x.com/greglalle/status/2120818902158761997",
-   "text": "Playing with gestures and micro-interactions to make text content more contextual and interactive. https://t.co/Mk8zjWckdQ",
-   "author": "greglalle",
-   "author_name": "greg",
-   "likes": 355,
-   "reposts": 10,
-   "views": 8690,
-   "created": 1794477603,
-   "duration": 14.55,
-   "video_url": "https://video.twimg.com/amplify_video/2120794339857047552/vid/avc1/720x900/hBVpKhg550rCBCl1.mp4?tag=14",
-   "reason": "Micro-Interactions und Gesten-Steuerung für Textinhalte. Das ist ein handwerkliches Web-Gimmick ohne generative KI und ohne Werbeton. Mit 15 Sekunden ist das Video kurz und der Effekt klar benennbar.",
-   "post_text": "Ein kurzes Experiment mit Gesten und Micro-Interactions, das Textinhalte interaktiv und kontextbezogen macht. Mir gefällt, dass Animation hier nicht als Deko dient. Sie hilft beim Lesen und Verstehen. Für Motion Designer, die in Richtung UI und Web arbeiten, ist das ein guter Denkanstoß, wie Bewegung Inhalt strukturieren kann.",
-   "hashtags": [
-    "#MotionDesign",
-    "#MicroInteractions",
-    "#UIDesign"
-   ],
-   "sent": 1794581595,
-   "msg_id": 31
-  },
   "2120809570344050705": {
    "id": "2120809570344050705",
    "url": "https://x.com/mxvdl/status/2120809570344050705",
@@ -126,6 +105,28 @@
    ],
    "sent": 1794752213,
    "msg_id": 39
+  },
+  "2121627795566567577": {
+   "id": "2121627795566567577",
+   "url": "https://x.com/rewind02/status/2121627795566567577",
+   "text": "3D harbour in the browser with Opus 5.5 + Blender + Three.js..\n\nit started from a single drawing\n\nmatching the illustration first, then making it explorable. here’s the workflow:\n\n- step 1: pick one illustration as the target, and lock the camera to its exact angle\n- step 2: blender + mcp: have opus block out the stack from the drawing: pier, stilts, floors, stairs\n- step 3: blender: opus builds the details in layers: rooftops > shopfronts > waterline > the stair\n- step 4: blender: assign flat stylized materials, then export one glb\n- step 5: three.js: opus loads the glb and adds teal water with ripples and reflections\n- step 6: three.js: warm emissive windows, string lights and lanterns with bloom\n- step 7: three.js: time of day toggles (dusk, day, rain, night) and drifting gulls\n- step 8: three.js: camera modes: orbit, walk around the pier, steer the boat\n- step 9: add the life: little robots wandering the piers and boats leaving wakes\n\nif it doesn’t look right from the reference camera, it won’t look right anywhere",
+   "author": "rewind02",
+   "author_name": "rewind",
+   "likes": 490,
+   "reposts": 34,
+   "views": 19073,
+   "created": 1794670459,
+   "duration": 25.433,
+   "video_url": "https://video.twimg.com/amplify_video/2121627711550398464/vid/avc1/1120x1080/u7BLH_xNrbBMT1Fm.mp4?tag=29",
+   "reason": "Konkreter Workflow statt Promo: eine Illustration wird mit Blender (via MCP mit Opus) und Three.js zur begehbaren WebGL-Szene. KI übernimmt echte Arbeitsschritte, das Ergebnis ist ein Web-Gimmick. Kurzes Video (25 s), klar benennbare Tools.",
+   "post_text": "Eine einzelne Illustration als begehbare Three.js-Szene, aufgebaut über Blender mit MCP-Anbindung an Opus. Mir gefällt der Ansatz, zuerst die Kamera exakt auf den Winkel der Zeichnung zu fixieren und erst dann Details, Licht und Wasser in Schichten aufzubauen. Der Stil bleibt dadurch beim Original, und der Weg vom Key Visual zur interaktiven Web-Szene wird deutlich kürzer.",
+   "hashtags": [
+    "#MotionDesign",
+    "#Threejs",
+    "#Blender"
+   ],
+   "sent": 1794774778,
+   "msg_id": 41
   }
  },
  "feedback": [
