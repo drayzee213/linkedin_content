@@ -15,53 +15,10 @@
   "2120910879361548565",
   "2121559962572976465",
   "2121655458914312436",
-  "2121627795566567577"
+  "2121627795566567577",
+  "2122304411049558386"
  ],
  "pending": {
-  "2120809570344050705": {
-   "id": "2120809570344050705",
-   "url": "https://x.com/mxvdl/status/2120809570344050705",
-   "text": "For the people interested by the @threejs ligthweight brush stroke shader and overal animation I posted yesterday, here's a complete breakdown.\n\nStill fully made with Fable 5.2 @claudeai \n\n(Yes you can also create these easily) https://t.co/x2pE4S9a8N",
-   "author": "mxvdl",
-   "author_name": "Max Vedel",
-   "likes": 607,
-   "reposts": 25,
-   "views": 23248,
-   "created": 1794475378,
-   "duration": 100.074,
-   "video_url": "https://video.twimg.com/amplify_video/2120808418629791744/vid/avc1/1920x1080/S1MrGh1B9N6dsNsN.mp4?tag=29",
-   "reason": "Ein echter Breakdown eines Three.js-Brush-Stroke-Shaders samt Animation statt eines Promo-Trailers. Das ist Creative Coding mit KI als Code-Werkzeug ohne generierte Frames und passt damit zu den positiv bewerteten Pipeline-Beispielen.",
-   "post_text": "Ein Breakdown zu einem leichtgewichtigen Brush-Stroke-Shader in Three.js und der Animation dazu. Mich interessiert daran weniger der Look als der Weg dorthin. Der Pinselstrich entsteht komplett im Code, gebaut mit Claude (Fable 5.2), und das Ergebnis läuft im Browser. Für Motion Designer ist das ein greifbares Beispiel, wie man einen handgemachten Stil ins Web bringt.",
-   "hashtags": [
-    "#MotionDesign",
-    "#ThreeJS",
-    "#CreativeCoding"
-   ],
-   "sent": 1794605760,
-   "msg_id": 33
-  },
-  "2120910879361548565": {
-   "id": "2120910879361548565",
-   "url": "https://x.com/LexnLin/status/2120910879361548565",
-   "text": "I built a realistic bedroom with Fable 5.2 in threejs\n\neverything you see is code! (no pre-made 3d assets/textures were used) https://t.co/0QsYrhEWXj",
-   "author": "LexnLin",
-   "author_name": "Leon Lin",
-   "likes": 849,
-   "reposts": 23,
-   "views": 45830,
-   "created": 1794499532,
-   "duration": 45.0,
-   "video_url": "https://video.twimg.com/amplify_video/2120909786296295424/vid/avc1/3840x2160/ZzPOqGAcMZlV7SBb.mp4?tag=29",
-   "reason": "WebGL/Creative Coding mit three.js im echten Ergebnis. Die Szene wurde laut Tweet komplett per Code mit Fable 5.2 erstellt, ohne fertige Assets, also keine Bild- oder Videogenerierung. Das Video ist mit 45 Sekunden kurz, kein Promo-Ton, und es passt zum positiv bewerteten Fable-5.2-Pipeline-Beispiel.",
-   "post_text": "Ein realistisches Schlafzimmer in three.js, komplett als Code mit Fable 5.2 gebaut, ohne vorgefertigte 3D-Assets oder Texturen. Für mich ist das interessant, weil hier kein Bild generiert wird, sondern eine echte WebGL-Szene entsteht, die man weiter animieren und interaktiv machen kann. Für Web-Gimmicks und 3D-Prototypen im Browser wird die Einstiegshürde damit deutlich niedriger.",
-   "hashtags": [
-    "#MotionDesign",
-    "#threejs",
-    "#CreativeCoding"
-   ],
-   "sent": 1794664000,
-   "msg_id": 35
-  },
   "2121559962572976465": {
    "id": "2121559962572976465",
    "url": "https://x.com/toyxyz3/status/2121559962572976465",
@@ -127,6 +84,28 @@
    ],
    "sent": 1794774778,
    "msg_id": 41
+  },
+  "2122304411049558386": {
+   "id": "2122304411049558386",
+   "url": "https://x.com/ashthornton/status/2122304411049558386",
+   "text": "had to give my little furry friend some snow to play in :)\n\nalso using the SPOM technique, no extra geometry same as the fur\n\n#threejs #webgl #webgpu https://t.co/cOUdl7PYP6",
+   "author": "ashthornton",
+   "author_name": "Ash Thornton",
+   "likes": 134,
+   "reposts": 9,
+   "views": 4111,
+   "created": 1794831776,
+   "duration": 43.333,
+   "video_url": "https://video.twimg.com/amplify_video/2122304037827592192/vid/avc1/1920x1080/doB5QOvWwhXTvZgt.mp4?tag=29",
+   "reason": "Handwerklich starkes Creative-Coding-Beispiel in Three.js/WebGL mit einer klar benennbaren Technik (SPOM). Fell und Schnee entstehen ohne zusätzliche Geometrie. Das ist echte Arbeit und keine Promo, kurz (43 s) und ohne generative KI.",
+   "post_text": "Ash Thornton lässt eine kleine Fellfigur in Three.js durch Schnee laufen, beides per SPOM-Technik ohne zusätzliche Geometrie. Mir gefällt, dass Volumen und Tiefe hier im Shader entstehen statt über Polygone. Für interaktive Charaktere und Web-Gimmicks finde ich das einen spannenden Ansatz.",
+   "hashtags": [
+    "#threejs",
+    "#WebGL",
+    "#CreativeCoding"
+   ],
+   "sent": 1794846094,
+   "msg_id": 43
   }
  },
  "feedback": [
