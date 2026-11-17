@@ -16,53 +16,10 @@
   "2121559962572976465",
   "2121655458914312436",
   "2121627795566567577",
-  "2122304411049558386"
+  "2122304411049558386",
+  "2122041787984613476"
  ],
  "pending": {
-  "2121559962572976465": {
-   "id": "2121559962572976465",
-   "url": "https://x.com/toyxyz3/status/2121559962572976465",
-   "text": "I’ve created a Blender add-on that makes it easy to use NVIDIA’s Kimodo, MotionBricks, and ARDY directly in Blender! When combined with my retargeting add-on, you can generate motions while previewing them directly on your target character. https://t.co/fO15bBEfxI https://t.co/vtM9TT4Hx1",
-   "author": "toyxyz3",
-   "author_name": "toyxyz",
-   "likes": 299,
-   "reposts": 31,
-   "views": 10988,
-   "created": 1794654286,
-   "duration": 11.683,
-   "video_url": "https://video.twimg.com/amplify_video/2121559025682960384/vid/avc1/3840x2160/-u82QZNIRjhD3mdT.mp4?tag=29",
-   "reason": "Konkretes Blender-Add-on, in dem KI einen echten Animationsschritt unterstützt: Motion-Generierung mit Retargeting und Vorschau auf dem Zielcharakter. Kurze Demo von 12 Sekunden aus dem Einsatz, kein Promo-Trailer und keine Prompt-zu-Video-Generierung.",
-   "post_text": "Ein Blender-Add-on von toyxyz3 holt NVIDIAs Kimodo, MotionBricks und ARDY direkt in Blender. Zusammen mit seinem Retargeting-Add-on lassen sich die generierten Motions gleich auf dem eigenen Zielcharakter in der Vorschau ansehen. Das halte ich für den eigentlich nützlichen Teil, weil man die Bewegung direkt an dem Rig beurteilt, auf dem sie am Ende landen soll.",
-   "hashtags": [
-    "#Blender",
-    "#Animation",
-    "#MotionDesign"
-   ],
-   "sent": 1794686678,
-   "msg_id": 37
-  },
-  "2121655458914312436": {
-   "id": "2121655458914312436",
-   "url": "https://x.com/ajc_builds/status/2121655458914312436",
-   "text": "What happens when you click a spider web?\n\nThe spiders think it’s dinner 🕷️\n\nDay 14 of #codevember: Tension\n\nReal web physics, super accurate spiders. Lure them in, or pull too hard and snap the web. Open sourced.\n\nLinks to play and the code in the comments. \n\n@threejs @mrdoob @akella  @reactthreefiber\n\n#codevember #threejs #webgpu",
-   "author": "ajc_builds",
-   "author_name": "Adam Chernick",
-   "likes": 286,
-   "reposts": 21,
-   "views": 10614,
-   "created": 1794677054,
-   "duration": 40.191,
-   "video_url": "https://video.twimg.com/amplify_video/2121655135147630592/vid/avc1/1376x1218/vdieitc2ZNYlpFOj.mp4?tag=29",
-   "reason": "Creative Coding mit Three.js und echter Netz-Physik, interaktives Web-Gimmick aus der Codevember-Reihe, Open Source und kein Promo-Ton. Passt genau zu WebGL und Micro-Interactions, kurzes Video mit klar benennbarer Technik.",
-   "post_text": "Ein Spinnennetz mit echter Physik in Three.js, bei dem ein Klick die Spinnen anlockt wie Beute. Entstanden für Codevember zum Thema Tension. Zieht man zu stark, reißt das Netz. Mir gefällt, wie viel Charakter eine simple Interaktion bekommt, wenn die Physik dahinter stimmt. Der Code ist Open Source und damit ein gutes Studienobjekt für alle, die mit React Three Fiber arbeiten.",
-   "hashtags": [
-    "#CreativeCoding",
-    "#threejs",
-    "#MotionDesign"
-   ],
-   "sent": 1794752213,
-   "msg_id": 39
-  },
   "2121627795566567577": {
    "id": "2121627795566567577",
    "url": "https://x.com/rewind02/status/2121627795566567577",
@@ -106,6 +63,28 @@
    ],
    "sent": 1794846094,
    "msg_id": 43
+  },
+  "2122041787984613476": {
+   "id": "2122041787984613476",
+   "url": "https://x.com/apekshik/status/2122041787984613476",
+   "text": "I built Unreal Engine's Nanite System in threejs https://t.co/ySsY2v7wqp\n\nLike Nanite in Unreal, you can drop in a film-quality mesh with millions of triangles as it is. No retopology, no decimating, no hand-made LODs. The engine works out how much of it to draw.\n\nIn the example below, there's 184 million triangles but only under 2 million are drawn without any meaningful dip in visual fidelity. \n\nHow it works:\n\nEvery mesh is cut into small clusters of triangles, and each cluster is stored at many levels of detail. Every frame, each cluster picks the coarsest level that still looks identical at its size on screen. Close to the camera you get full detail; far away, a fraction of it.\n\nNeighbouring clusters always agree on their shared edges, so there are no cracks and no popping.\n\nYou can also give the whole scene one triangle budget and it stays inside it. Hidden props are culled, and only the detail in view is streamed in.\n\nWhat it doesn't have is Nanite's software rasteriser. WebGL2 has no compute shaders, so the win here comes from drawing far fewer triangles, not from making each one cheaper. WebGPU could do that part.\n\nWorks with stock three.js materials. It's open source with an MIT License. \n\nI wanted to experiment with it a bit more before posting about it but i thought it would be cool to set it free and see what others build with it and figure out better ways to optimize it in a communal manner! \n\nThis is experimental so don't expect it to be as plug and play as it is inside unreal engine but it's still so cool to see how we can try out really interesting ideas in ways that were impossible only a few months ago.",
+   "author": "apekshik",
+   "author_name": "apek",
+   "likes": 603,
+   "reposts": 50,
+   "views": 22076,
+   "created": 1794769162,
+   "duration": 35.333,
+   "video_url": "https://video.twimg.com/amplify_video/2122041600289427456/vid/avc1/1080x1080/RpyFZjOXCGSHweNV.mp4?tag=29",
+   "reason": "Echtes Creative-Coding-Projekt mit Demo: Nanite-artiges LOD-System für three.js/WebGL, Open Source, technisch konkret erklärt. Kein Promo-Trailer, keine generative KI, kurzes Video.",
+   "post_text": "Jemand hat das Nanite-Prinzip aus Unreal in three.js nachgebaut, Open Source unter MIT-Lizenz. Meshes werden in Cluster mit mehreren Detailstufen zerlegt, pro Frame wird nur so viel Detail gezeichnet, wie auf dem Bildschirm sichtbar ist. Im Beispiel sind es 184 Millionen Dreiecke, gezeichnet werden unter 2 Millionen. Für WebGL-Projekte mit schweren 3D-Assets finde ich das spannend, auch wenn der Autor es selbst noch experimentell nennt.",
+   "hashtags": [
+    "#threejs",
+    "#WebGL",
+    "#CreativeCoding"
+   ],
+   "sent": 1794932845,
+   "msg_id": 45
   }
  },
  "feedback": [
