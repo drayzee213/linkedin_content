@@ -17,31 +17,10 @@
   "2121655458914312436",
   "2121627795566567577",
   "2122304411049558386",
-  "2122041787984613476"
+  "2122041787984613476",
+  "2122691983680635088"
  ],
  "pending": {
-  "2121627795566567577": {
-   "id": "2121627795566567577",
-   "url": "https://x.com/rewind02/status/2121627795566567577",
-   "text": "3D harbour in the browser with Opus 5.5 + Blender + Three.js..\n\nit started from a single drawing\n\nmatching the illustration first, then making it explorable. here’s the workflow:\n\n- step 1: pick one illustration as the target, and lock the camera to its exact angle\n- step 2: blender + mcp: have opus block out the stack from the drawing: pier, stilts, floors, stairs\n- step 3: blender: opus builds the details in layers: rooftops > shopfronts > waterline > the stair\n- step 4: blender: assign flat stylized materials, then export one glb\n- step 5: three.js: opus loads the glb and adds teal water with ripples and reflections\n- step 6: three.js: warm emissive windows, string lights and lanterns with bloom\n- step 7: three.js: time of day toggles (dusk, day, rain, night) and drifting gulls\n- step 8: three.js: camera modes: orbit, walk around the pier, steer the boat\n- step 9: add the life: little robots wandering the piers and boats leaving wakes\n\nif it doesn’t look right from the reference camera, it won’t look right anywhere",
-   "author": "rewind02",
-   "author_name": "rewind",
-   "likes": 490,
-   "reposts": 34,
-   "views": 19073,
-   "created": 1794670459,
-   "duration": 25.433,
-   "video_url": "https://video.twimg.com/amplify_video/2121627711550398464/vid/avc1/1120x1080/u7BLH_xNrbBMT1Fm.mp4?tag=29",
-   "reason": "Konkreter Workflow statt Promo: eine Illustration wird mit Blender (via MCP mit Opus) und Three.js zur begehbaren WebGL-Szene. KI übernimmt echte Arbeitsschritte, das Ergebnis ist ein Web-Gimmick. Kurzes Video (25 s), klar benennbare Tools.",
-   "post_text": "Eine einzelne Illustration als begehbare Three.js-Szene, aufgebaut über Blender mit MCP-Anbindung an Opus. Mir gefällt der Ansatz, zuerst die Kamera exakt auf den Winkel der Zeichnung zu fixieren und erst dann Details, Licht und Wasser in Schichten aufzubauen. Der Stil bleibt dadurch beim Original, und der Weg vom Key Visual zur interaktiven Web-Szene wird deutlich kürzer.",
-   "hashtags": [
-    "#MotionDesign",
-    "#Threejs",
-    "#Blender"
-   ],
-   "sent": 1794774778,
-   "msg_id": 41
-  },
   "2122304411049558386": {
    "id": "2122304411049558386",
    "url": "https://x.com/ashthornton/status/2122304411049558386",
@@ -85,6 +64,28 @@
    ],
    "sent": 1794932845,
    "msg_id": 45
+  },
+  "2122691983680635088": {
+   "id": "2122691983680635088",
+   "url": "https://x.com/_pwd_/status/2122691983680635088",
+   "text": "Codevember 2026 / 17 / Kelp #threejs     \n\nLive: https://t.co/MTZU03aSII \n\n...sound on!\n\n#indiedev #creativecoding #shaders #webgpu #tsl #gamedev https://t.co/DMNSbPksgI",
+   "author": "_pwd_",
+   "author_name": "Frank Reitberger",
+   "likes": 237,
+   "reposts": 22,
+   "views": 6979,
+   "created": 1794924181,
+   "duration": 83.94,
+   "video_url": "https://video.twimg.com/amplify_video/2122691637402820608/vid/avc1/1728x1080/CPJQFlZc7sh25_hI.mp4?tag=29",
+   "reason": "Creative-Coding-Arbeit aus der Codevember-Reihe mit three.js, WebGPU und TSL-Shadern, live im Browser. Ein fertiges Ergebnis statt Promo, mit klar benennbarer Technik, passend zu WebGL und Creative Coding. Mit 84 Sekunden noch unter 90.",
+   "post_text": "Kelp ist ein Codevember-Beitrag von @_pwd_, gebaut mit three.js, WebGPU und TSL-Shadern. Er läuft live im Browser. Interessant finde ich die Kombination aus WebGPU und der Three Shading Language, weil Shader-Arbeit damit näher an den three.js-Workflow rückt. Für Motion Designer, die Richtung Web und Echtzeit denken, ist das ein gutes Beispiel dafür, was im Browser inzwischen möglich ist. Der Autor empfiehlt, das Video mit Ton anzusehen.",
+   "hashtags": [
+    "#CreativeCoding",
+    "#threejs",
+    "#MotionDesign"
+   ],
+   "sent": 1795017431,
+   "msg_id": 47
   }
  },
  "feedback": [
