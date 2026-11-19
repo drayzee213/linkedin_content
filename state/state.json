@@ -18,31 +18,10 @@
   "2121627795566567577",
   "2122304411049558386",
   "2122041787984613476",
-  "2122691983680635088"
+  "2122691983680635088",
+  "2123144217912623403"
  ],
  "pending": {
-  "2122304411049558386": {
-   "id": "2122304411049558386",
-   "url": "https://x.com/ashthornton/status/2122304411049558386",
-   "text": "had to give my little furry friend some snow to play in :)\n\nalso using the SPOM technique, no extra geometry same as the fur\n\n#threejs #webgl #webgpu https://t.co/cOUdl7PYP6",
-   "author": "ashthornton",
-   "author_name": "Ash Thornton",
-   "likes": 134,
-   "reposts": 9,
-   "views": 4111,
-   "created": 1794831776,
-   "duration": 43.333,
-   "video_url": "https://video.twimg.com/amplify_video/2122304037827592192/vid/avc1/1920x1080/doB5QOvWwhXTvZgt.mp4?tag=29",
-   "reason": "Handwerklich starkes Creative-Coding-Beispiel in Three.js/WebGL mit einer klar benennbaren Technik (SPOM). Fell und Schnee entstehen ohne zusätzliche Geometrie. Das ist echte Arbeit und keine Promo, kurz (43 s) und ohne generative KI.",
-   "post_text": "Ash Thornton lässt eine kleine Fellfigur in Three.js durch Schnee laufen, beides per SPOM-Technik ohne zusätzliche Geometrie. Mir gefällt, dass Volumen und Tiefe hier im Shader entstehen statt über Polygone. Für interaktive Charaktere und Web-Gimmicks finde ich das einen spannenden Ansatz.",
-   "hashtags": [
-    "#threejs",
-    "#WebGL",
-    "#CreativeCoding"
-   ],
-   "sent": 1794846094,
-   "msg_id": 43
-  },
   "2122041787984613476": {
    "id": "2122041787984613476",
    "url": "https://x.com/apekshik/status/2122041787984613476",
@@ -86,6 +65,28 @@
    ],
    "sent": 1795017431,
    "msg_id": 47
+  },
+  "2123144217912623403": {
+   "id": "2123144217912623403",
+   "url": "https://x.com/C_Kibe/status/2123144217912623403",
+   "text": "Mr. Puzzles from SMG4 and Calling All Villains, from PSD to loop 📺\nPainting, layer breakdown, bone rig and face swaps in Spine 2D, compositing in After Effects ✨\n\n🎨Photoshop + Spine 2D + After Effects NO AI SLOP\n\n#mrpuzzles #callingallvillains #spine2d #2danimation https://t.co/4wztWjgw6n",
+   "author": "C_Kibe",
+   "author_name": "Ckibe ✨",
+   "likes": 1468,
+   "reposts": 155,
+   "views": 11843,
+   "created": 1795032002,
+   "duration": 39.3,
+   "video_url": "https://video.twimg.com/amplify_video/2123028202100551680/vid/avc1/720x1280/zO8EU_3-o7lMGNtI.mp4?tag=29",
+   "reason": "Handwerklicher Breakdown vom PSD bis zum Loop mit klar benennbaren Tools (Photoshop, Spine 2D, After Effects). Er zeigt echte Arbeit statt Promo, ohne generative KI, und ist mit 39 Sekunden kurz.",
+   "post_text": "C_Kibe zeigt, wie aus einem PSD-Painting von Mr. Puzzles ein animierter Loop in Spine 2D wird. Zu sehen sind Layer-Breakdown, Bone-Rig und Face Swaps, das Compositing passiert in After Effects. Spine kommt eher aus der Game-Ecke, ich halte es aber auch für Motion Designer für ein unterschätztes Rigging-Werkzeug bei Character-Loops.",
+   "hashtags": [
+    "#MotionDesign",
+    "#Spine2D",
+    "#AfterEffects"
+   ],
+   "sent": 1795104092,
+   "msg_id": 49
   }
  },
  "feedback": [
