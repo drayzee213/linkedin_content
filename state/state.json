@@ -20,74 +20,31 @@
   "2122041787984613476",
   "2122691983680635088",
   "2123144217912623403",
-  "2123426871240974721"
+  "2123426871240974721",
+  "2125195041542963322"
  ],
  "pending": {
-  "2122691983680635088": {
-   "id": "2122691983680635088",
-   "url": "https://x.com/_pwd_/status/2122691983680635088",
-   "text": "Codevember 2026 / 17 / Kelp #threejs     \n\nLive: https://t.co/MTZU03aSII \n\n...sound on!\n\n#indiedev #creativecoding #shaders #webgpu #tsl #gamedev https://t.co/DMNSbPksgI",
-   "author": "_pwd_",
-   "author_name": "Frank Reitberger",
-   "likes": 237,
-   "reposts": 22,
-   "views": 6979,
-   "created": 1794924181,
-   "duration": 83.94,
-   "video_url": "https://video.twimg.com/amplify_video/2122691637402820608/vid/avc1/1728x1080/CPJQFlZc7sh25_hI.mp4?tag=29",
-   "reason": "Creative-Coding-Arbeit aus der Codevember-Reihe mit three.js, WebGPU und TSL-Shadern, live im Browser. Ein fertiges Ergebnis statt Promo, mit klar benennbarer Technik, passend zu WebGL und Creative Coding. Mit 84 Sekunden noch unter 90.",
-   "post_text": "Kelp ist ein Codevember-Beitrag von @_pwd_, gebaut mit three.js, WebGPU und TSL-Shadern. Er läuft live im Browser. Interessant finde ich die Kombination aus WebGPU und der Three Shading Language, weil Shader-Arbeit damit näher an den three.js-Workflow rückt. Für Motion Designer, die Richtung Web und Echtzeit denken, ist das ein gutes Beispiel dafür, was im Browser inzwischen möglich ist. Der Autor empfiehlt, das Video mit Ton anzusehen.",
-   "hashtags": [
-    "#CreativeCoding",
-    "#threejs",
-    "#MotionDesign"
-   ],
-   "sent": 1795017431,
-   "msg_id": 47
-  },
-  "2123144217912623403": {
-   "id": "2123144217912623403",
-   "url": "https://x.com/C_Kibe/status/2123144217912623403",
-   "text": "Mr. Puzzles from SMG4 and Calling All Villains, from PSD to loop 📺\nPainting, layer breakdown, bone rig and face swaps in Spine 2D, compositing in After Effects ✨\n\n🎨Photoshop + Spine 2D + After Effects NO AI SLOP\n\n#mrpuzzles #callingallvillains #spine2d #2danimation https://t.co/4wztWjgw6n",
-   "author": "C_Kibe",
-   "author_name": "Ckibe ✨",
-   "likes": 1468,
-   "reposts": 155,
-   "views": 11843,
-   "created": 1795032002,
-   "duration": 39.3,
-   "video_url": "https://video.twimg.com/amplify_video/2123028202100551680/vid/avc1/720x1280/zO8EU_3-o7lMGNtI.mp4?tag=29",
-   "reason": "Handwerklicher Breakdown vom PSD bis zum Loop mit klar benennbaren Tools (Photoshop, Spine 2D, After Effects). Er zeigt echte Arbeit statt Promo, ohne generative KI, und ist mit 39 Sekunden kurz.",
-   "post_text": "C_Kibe zeigt, wie aus einem PSD-Painting von Mr. Puzzles ein animierter Loop in Spine 2D wird. Zu sehen sind Layer-Breakdown, Bone-Rig und Face Swaps, das Compositing passiert in After Effects. Spine kommt eher aus der Game-Ecke, ich halte es aber auch für Motion Designer für ein unterschätztes Rigging-Werkzeug bei Character-Loops.",
+  "2125195041542963322": {
+   "id": "2125195041542963322",
+   "url": "https://x.com/random_freaks/status/2125195041542963322",
+   "text": "No AI. just a lot of cardboard buildings. animated frame by frame in After Effects https://t.co/tbZW6J9muQ",
+   "author": "random_freaks",
+   "author_name": "RANDOM FREAKS",
+   "likes": 965,
+   "reposts": 108,
+   "views": 19381,
+   "created": 1795520956,
+   "duration": 26.026,
+   "video_url": "https://video.twimg.com/amplify_video/2125194981396680706/vid/avc1/720x720/sze-IfW15IIKX3kx.mp4?tag=29",
+   "reason": "Handwerklich starke Animation ohne KI: Kartongebäude, Frame für Frame in After Effects animiert. Kurz (26 s), klar benennbare Technik, kein Werbeton.",
+   "post_text": "Kartonhäuser, Frame für Frame in After Effects animiert und ausdrücklich ohne KI. Mir gefällt, dass hier der Look aus dem Material kommt und nicht aus einem Filter. Frame-by-Frame wirkt im Moment fast altmodisch, gerade deshalb fällt so etwas im Feed auf.",
    "hashtags": [
     "#MotionDesign",
-    "#Spine2D",
-    "#AfterEffects"
-   ],
-   "sent": 1795104092,
-   "msg_id": 49
-  },
-  "2123426871240974721": {
-   "id": "2123426871240974721",
-   "url": "https://x.com/anna_si3231/status/2123426871240974721",
-   "text": "all done in Rive\nThe hand-drawn effect is fully customised https://t.co/3jWvPCQKza",
-   "author": "anna_si3231",
-   "author_name": "Anna Sin",
-   "likes": 1501,
-   "reposts": 75,
-   "views": 33095,
-   "created": 1795099392,
-   "duration": 27.335,
-   "video_url": "https://video.twimg.com/amplify_video/2123425719199891456/vid/avc1/2504x1564/evQK9rAtR5jyZw-p.mp4?tag=29",
-   "reason": "Handwerkliches Ergebnis direkt aus Rive, kurzer Clip (27 s), klar benennbares Tool und Effekt (individueller Hand-drawn-Look). Keine Promo, keine generative KI.",
-   "post_text": "Eine komplett in Rive gebaute Animation mit eigens angepasstem Hand-drawn-Effekt. Rive kenne ich vor allem für saubere, interaktive UI-Animationen. Ein organischer, gezeichneter Look direkt im Tool ist deshalb interessant, gerade für Web und Apps, wo man sonst schnell bei Lottie oder Videoexport landet.",
-   "hashtags": [
-    "#MotionDesign",
-    "#Rive",
+    "#AfterEffects",
     "#Animation"
    ],
-   "sent": 1795189490,
-   "msg_id": 51
+   "sent": 1795544100,
+   "msg_id": 53
   }
  },
  "feedback": [
