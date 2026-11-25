@@ -21,7 +21,8 @@
   "2122691983680635088",
   "2123144217912623403",
   "2123426871240974721",
-  "2125195041542963322"
+  "2125195041542963322",
+  "2125090431117508725"
  ],
  "pending": {
   "2125195041542963322": {
@@ -45,6 +46,28 @@
    ],
    "sent": 1795544100,
    "msg_id": 53
+  },
+  "2125090431117508725": {
+   "id": "2125090431117508725",
+   "url": "https://x.com/Swoon476/status/2125090431117508725",
+   "text": "What if we could use Spine2D features directly in After Effects?\n\nWe're developing a plugin that makes this possible.\n@ozymonde \n\nSW_Rig coming soon!🍥\n\n#aftereffects #Spine2d #rigging #animation https://t.co/txlQAXje7U",
+   "author": "Swoon476",
+   "author_name": "🍥",
+   "likes": 831,
+   "reposts": 84,
+   "views": 12853,
+   "created": 1795496015,
+   "duration": 22.313,
+   "video_url": "https://video.twimg.com/amplify_video/2125087920956579841/vid/avc1/1280x720/LsJWJCW2cw0a8YWS.mp4?tag=14",
+   "reason": "Rigging-Plugin für After Effects, das Spine2D-Funktionen nach AE holen soll. Kurzes Demo-Video (22 s) mit klar benennbarem Tool, Fokus auf Rigging statt Generierung. Wirkt wie ein Entwicklungsstand und nicht wie ein Verkaufstrailer.",
+   "post_text": "SW_Rig ist ein After-Effects-Plugin in Entwicklung, das Spine2D-Funktionen direkt in AE nutzbar machen soll. Für Character-Rigging finde ich das spannend, weil man dafür bisher oft zwischen Spine und After Effects hin- und herwechselt. Noch ist es nicht erschienen, die Richtung behalte ich aber im Blick.",
+   "hashtags": [
+    "#MotionDesign",
+    "#AfterEffects",
+    "#Rigging"
+   ],
+   "sent": 1795628109,
+   "msg_id": 55
   }
  },
  "feedback": [
