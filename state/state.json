@@ -22,7 +22,8 @@
   "2123144217912623403",
   "2123426871240974721",
   "2125195041542963322",
-  "2125090431117508725"
+  "2125090431117508725",
+  "2125917117526540700"
  ],
  "pending": {
   "2125195041542963322": {
@@ -68,6 +69,28 @@
    ],
    "sent": 1795628109,
    "msg_id": 55
+  },
+  "2125917117526540700": {
+   "id": "2125917117526540700",
+   "url": "https://x.com/akella/status/2125917117526540700",
+   "text": "Codevember 2026 / 20 / Cocoon  \n\nhttps://t.co/ivhgppIKxZ\n\nUsing neural precomputed radiance transfer, inspired by @onirenaud experiments. I might've used too much geometry 😅, apologies to your gpu!\n#threejs https://t.co/6vjUM1fwrv",
+   "author": "akella",
+   "author_name": "akella",
+   "likes": 222,
+   "reposts": 19,
+   "views": 26800,
+   "created": 1795693113,
+   "duration": 26.0,
+   "video_url": "https://video.twimg.com/amplify_video/2125916882800607232/vid/avc1/1024x1024/FTjgdlvhWCVuDKnS.mp4",
+   "reason": "Creative Coding mit klar benannter Technik (three.js, neural precomputed radiance transfer), kurzes Video, echtes Ergebnis statt Promo, kein generatives KI-Video.",
+   "post_text": "Für Codevember hat akella mit „Cocoon“ eine three.js-Szene gebaut, die neural precomputed radiance transfer nutzt. Spannend finde ich, dass ein neuronales Netz hier vorberechnetes Licht liefert und so realistische Beleuchtung im Browser in Echtzeit läuft. Für alle, die WebGL und Motion zusammendenken, ist das ein guter Hinweis darauf, wohin interaktive 3D-Looks gerade gehen.",
+   "hashtags": [
+    "#MotionDesign",
+    "#threejs",
+    "#CreativeCoding"
+   ],
+   "sent": 1795713399,
+   "msg_id": 57
   }
  },
  "feedback": [
