@@ -23,31 +23,10 @@
   "2123426871240974721",
   "2125195041542963322",
   "2125090431117508725",
-  "2125917117526540700"
+  "2125917117526540700",
+  "2125995984400654658"
  ],
  "pending": {
-  "2125195041542963322": {
-   "id": "2125195041542963322",
-   "url": "https://x.com/random_freaks/status/2125195041542963322",
-   "text": "No AI. just a lot of cardboard buildings. animated frame by frame in After Effects https://t.co/tbZW6J9muQ",
-   "author": "random_freaks",
-   "author_name": "RANDOM FREAKS",
-   "likes": 965,
-   "reposts": 108,
-   "views": 19381,
-   "created": 1795520956,
-   "duration": 26.026,
-   "video_url": "https://video.twimg.com/amplify_video/2125194981396680706/vid/avc1/720x720/sze-IfW15IIKX3kx.mp4?tag=29",
-   "reason": "Handwerklich starke Animation ohne KI: Kartongebäude, Frame für Frame in After Effects animiert. Kurz (26 s), klar benennbare Technik, kein Werbeton.",
-   "post_text": "Kartonhäuser, Frame für Frame in After Effects animiert und ausdrücklich ohne KI. Mir gefällt, dass hier der Look aus dem Material kommt und nicht aus einem Filter. Frame-by-Frame wirkt im Moment fast altmodisch, gerade deshalb fällt so etwas im Feed auf.",
-   "hashtags": [
-    "#MotionDesign",
-    "#AfterEffects",
-    "#Animation"
-   ],
-   "sent": 1795544100,
-   "msg_id": 53
-  },
   "2125090431117508725": {
    "id": "2125090431117508725",
    "url": "https://x.com/Swoon476/status/2125090431117508725",
@@ -91,6 +70,28 @@
    ],
    "sent": 1795713399,
    "msg_id": 57
+  },
+  "2125995984400654658": {
+   "id": "2125995984400654658",
+   "url": "https://x.com/MengTo/status/2125995984400654658",
+   "text": "I built an endless three.js motorcycle ride with GPT-6.2 Astra. I used parallax and fisheye camera tricks to achieve this.\n\nUrl: https://t.co/DQYUszScvd\n\nSkills open-sourced:\nFisheye https://t.co/8MAqpzyZzZ\nParallax https://t.co/gxmkeQIInU\nParticles & sky https://t.co/6k8rPyDaO1\n\nInspiration: https://t.co/QL4yrp8CEP",
+   "author": "MengTo",
+   "author_name": "Meng To",
+   "likes": 4054,
+   "reposts": 321,
+   "views": 183905,
+   "created": 1795711916,
+   "duration": 40.0,
+   "video_url": "https://video.twimg.com/ext_tw_video/2125995879584985088/pu/vid/avc1/1280x720/YdGTkchFEzobnDxS.mp4?tag=12",
+   "reason": "Creative Coding mit three.js und klar benannten Techniken (Parallax, Fisheye-Kamera). KI dient hier als Werkzeug für Code, nicht für Bildgenerierung. Die Skills sind offengelegt. Das Video ist kurz und zeigt das Ergebnis, keine Promo.",
+   "post_text": "Eine endlose Motorradfahrt im Browser, gebaut mit three.js und GPT-6.2 Astra. Die Wirkung kommt über Parallax und eine Fisheye-Kamera zustande. Nützlich finde ich, dass die Bausteine für Fisheye, Parallax sowie Partikel und Himmel einzeln als Skills offengelegt sind. So lässt sich die Technik zerlegen und auf eigene Web-Animationen übertragen.",
+   "hashtags": [
+    "#CreativeCoding",
+    "#threejs",
+    "#MotionDesign"
+   ],
+   "sent": 1795798658,
+   "msg_id": 59
   }
  },
  "feedback": [
