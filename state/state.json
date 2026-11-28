@@ -24,31 +24,10 @@
   "2125195041542963322",
   "2125090431117508725",
   "2125917117526540700",
-  "2125995984400654658"
+  "2125995984400654658",
+  "2126184852148138338"
  ],
  "pending": {
-  "2125090431117508725": {
-   "id": "2125090431117508725",
-   "url": "https://x.com/Swoon476/status/2125090431117508725",
-   "text": "What if we could use Spine2D features directly in After Effects?\n\nWe're developing a plugin that makes this possible.\n@ozymonde \n\nSW_Rig coming soon!🍥\n\n#aftereffects #Spine2d #rigging #animation https://t.co/txlQAXje7U",
-   "author": "Swoon476",
-   "author_name": "🍥",
-   "likes": 831,
-   "reposts": 84,
-   "views": 12853,
-   "created": 1795496015,
-   "duration": 22.313,
-   "video_url": "https://video.twimg.com/amplify_video/2125087920956579841/vid/avc1/1280x720/LsJWJCW2cw0a8YWS.mp4?tag=14",
-   "reason": "Rigging-Plugin für After Effects, das Spine2D-Funktionen nach AE holen soll. Kurzes Demo-Video (22 s) mit klar benennbarem Tool, Fokus auf Rigging statt Generierung. Wirkt wie ein Entwicklungsstand und nicht wie ein Verkaufstrailer.",
-   "post_text": "SW_Rig ist ein After-Effects-Plugin in Entwicklung, das Spine2D-Funktionen direkt in AE nutzbar machen soll. Für Character-Rigging finde ich das spannend, weil man dafür bisher oft zwischen Spine und After Effects hin- und herwechselt. Noch ist es nicht erschienen, die Richtung behalte ich aber im Blick.",
-   "hashtags": [
-    "#MotionDesign",
-    "#AfterEffects",
-    "#Rigging"
-   ],
-   "sent": 1795628109,
-   "msg_id": 55
-  },
   "2125917117526540700": {
    "id": "2125917117526540700",
    "url": "https://x.com/akella/status/2125917117526540700",
@@ -92,6 +71,28 @@
    ],
    "sent": 1795798658,
    "msg_id": 59
+  },
+  "2126184852148138338": {
+   "id": "2126184852148138338",
+   "url": "https://x.com/teddyaisi/status/2126184852148138338",
+   "text": "Last Train · 01:17 AM.\n\nInspired by @javpixel_art's recent post, I built a 45s J-Horror MiniDV short in pure code with three.js. (no Blender, no UE5)\n\n2K 60fps.\n\nStack: @threejs, GPT Astra 6.2, Gemini 4 Neon, Claude Opus 5.5, @ElevenLabs .\n\nSound on. https://t.co/EbRfFwTYN6",
+   "author": "teddyaisi",
+   "author_name": "Teddy",
+   "likes": 616,
+   "reposts": 52,
+   "views": 258430,
+   "created": 1795756946,
+   "duration": 45.0,
+   "video_url": "https://video.twimg.com/amplify_video/2126179747235524608/vid/avc1/2560x1440/vUb0tvpZM0rD7Wsw.mp4?tag=29",
+   "reason": "Creative Coding mit three.js: ein kurzer J-Horror-Clip im MiniDV-Look, komplett im Code gebaut, ohne Blender oder UE5. Es gibt keine generierten Frames, die LLMs schreiben nur den Code. Das Video ist kurz (45 s), das Tool klar benennbar und es zeigt das fertige Ergebnis statt eines Promo-Trailers.",
+   "post_text": "Ein 45-Sekunden-Horrorclip im MiniDV-Look, komplett in three.js gecodet, ohne Blender oder Unreal. Spannend finde ich, dass hier kein Bild generiert wurde. Die Sprachmodelle schreiben nur den Code, Look und Kamera entstehen im Browser in 2K mit 60fps. Für Motion Designer zeigt das, wie weit WebGL als Werkzeug für atmosphärische Sequenzen inzwischen reicht.",
+   "hashtags": [
+    "#MotionDesign",
+    "#CreativeCoding",
+    "#threejs"
+   ],
+   "sent": 1795880922,
+   "msg_id": 61
   }
  },
  "feedback": [
